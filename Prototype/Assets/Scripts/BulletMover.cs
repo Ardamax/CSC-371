@@ -8,5 +8,9 @@ public class BulletMover : MonoBehaviour
     void Update()
     {
         gameObject.transform.Translate(new Vector3(0f, 1f, 0f) * speed * Time.deltaTime);
+
+        if (transform.position.y > 20) {
+            Destroy(gameObject);
+        }
     }
 }
