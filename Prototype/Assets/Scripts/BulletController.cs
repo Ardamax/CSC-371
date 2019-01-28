@@ -24,7 +24,8 @@ public class BulletController : MonoBehaviour
 
     void Update() {
         timeSinceLastSpawned += Time.deltaTime;
-        if (Input.GetKeyDown(key) && timeSinceLastSpawned > spawnRate) {
+        if (Input.GetKey(key) && timeSinceLastSpawned > spawnRate) {
+            timeSinceLastSpawned = 0f;
             Instantiate(bulletPrefab, new Vector2(gameObject.transform.position.x + spawnOffset.x, gameObject.transform.position.y + spawnOffset.y), Quaternion.identity); 
         }
     }
