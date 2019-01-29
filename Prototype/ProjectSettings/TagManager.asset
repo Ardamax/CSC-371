@@ -7,6 +7,10 @@ TagManager:
   - Left Wing
   - Right Wing
   - Enemy
+  - EnemyProjectile
+  - CannonBall
+  - PlayerProjectile
+  - Cannon
   layers:
   - Default
   - TransparentFX
