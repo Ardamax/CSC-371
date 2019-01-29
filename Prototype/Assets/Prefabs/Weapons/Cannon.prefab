@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1287915556241913967}
   - component: {fileID: 1287915556241913961}
   - component: {fileID: 1287915556241913960}
+  - component: {fileID: 6924512421080643677}
   m_Layer: 0
   m_Name: Cannon
   m_TagString: Cannon
@@ -95,3 +96,19 @@ MonoBehaviour:
   spawnRate: 0.1
   cannonBallPrefab: {fileID: 7462460035054612207, guid: e3c4b8a942e622d4889cd5375b397bb3,
     type: 3}
+--- !u!70 &6924512421080643677
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287915556241913966}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.02, y: -0.3}
+  m_Size: {x: 0.55, y: 1.7}
+  m_Direction: 0

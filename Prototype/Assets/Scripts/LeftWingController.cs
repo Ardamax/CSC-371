@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class LeftWingController : MonoBehaviour
 {
-    public float spawnRate = 0.1f;
     IWeapon weapon;
     private KeyCode key;
     private float timeSinceLastSpawned = 0f;

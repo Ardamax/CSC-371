@@ -297,7 +297,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 360828728}
-  - component: {fileID: 360828729}
   - component: {fileID: 360828730}
   m_Layer: 0
   m_Name: Right Wing
@@ -321,19 +320,6 @@ Transform:
   m_Father: {fileID: 220551792}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &360828729
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 360828727}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &360828730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -747,7 +733,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1727105606}
-  - component: {fileID: 1727105607}
   - component: {fileID: 1727105610}
   m_Layer: 0
   m_Name: Left Wing
@@ -771,19 +756,6 @@ Transform:
   m_Father: {fileID: 220551792}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1727105607
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1727105605}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1727105610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -913,8 +885,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1950502917}
-  - component: {fileID: 1950502918}
   - component: {fileID: 1950502919}
+  - component: {fileID: 1950502918}
   m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
@@ -936,19 +908,22 @@ Transform:
   m_Father: {fileID: 220551792}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1950502918
-BoxCollider:
+--- !u!70 &1950502918
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1950502916}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.04, y: 0}
+  m_Size: {x: 1.04, y: 2.95}
+  m_Direction: 0
 --- !u!212 &1950502919
 SpriteRenderer:
   m_ObjectHideFlags: 0
