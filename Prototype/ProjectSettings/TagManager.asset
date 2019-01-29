@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Left Wing
   - Right Wing
+  - Enemy
   layers:
   - Default
   - TransparentFX

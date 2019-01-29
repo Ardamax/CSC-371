@@ -21,6 +21,6 @@ public class GroundMovement : MonoBehaviour
 
     private void RepositionBackground() {
         Vector2 offset = new Vector2(0, groundVerticalLength * 2f);
-        transform.position = new Vector3 (transform.position.x, transform.position.y + (groundVerticalLength * 2f), transform.position.z);
+        transform.position = new Vector3 (transform.position.x, transform.position.y + (groundVerticalLength * 2f) - 3f, transform.position.z);
     }
 }
