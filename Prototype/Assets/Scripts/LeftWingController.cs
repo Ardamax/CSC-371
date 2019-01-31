@@ -12,7 +12,7 @@ public class LeftWingController : MonoBehaviour
     void Start() {
         weapon = gameObject.GetComponentInChildren<IWeapon>();
         if (gameObject.CompareTag("Left Wing")) {
-            key = KeyCode.Q;
+            key = KeyCode.O;
         }
         else {
             // idk

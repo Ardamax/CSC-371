@@ -14,7 +14,7 @@ public class RightWingController : MonoBehaviour
         weapon = gameObject.GetComponentInChildren<IWeapon>();
         if (gameObject.CompareTag("Right Wing"))
         {
-            key = KeyCode.E;
+            key = KeyCode.P;
         }
         else
         {
