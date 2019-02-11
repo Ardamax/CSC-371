@@ -10,7 +10,6 @@ public class Boundary
 
 public class PlayerController : MonoBehaviour
 {
-    public float maxSpeed;
     public float speed;
     public Boundary boundary;
     public Transform shotSpawn; // can add multiple
@@ -45,9 +44,8 @@ public class PlayerController : MonoBehaviour
         float verticalMovement = Input.GetAxis("Vertical");
 
         Vector2 movement = new Vector2(horizontalMovement, verticalMovement) * speed;
-        rb2d.AddForce(movement);
 
-        rb2d.velocity = Vector2.ClampMagnitude(rb2d.velocity, maxSpeed);
+        rb2d.velocity = movement;
 
     }
 }
