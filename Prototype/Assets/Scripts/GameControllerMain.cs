@@ -4,6 +4,8 @@ using UnityEngine.UI;
 
 public class GameControllerMain : MonoBehaviour
 {
+
+    //built in spawner
     public GameObject[] hazards;
     public Vector3 spawnValues;
     public int hazardCount;
@@ -11,6 +13,7 @@ public class GameControllerMain : MonoBehaviour
     public float startWait;
     public float waveWait;
 
+    
     public Text restartText;
     public Text gameOverText;
     private bool gameOver;
@@ -46,9 +49,8 @@ public class GameControllerMain : MonoBehaviour
             for (int i = 0; i < hazardCount; i++)
             {
                 GameObject hazard = hazards[Random.Range(0, hazards.Length)];
-                Vector3 spawnPosition = new Vector3(Random.Range(-spawnValues.x, spawnValues.x), spawnValues.y, spawnValues.z);
-                Quaternion spawnRotation = Quaternion.identity;
-                Instantiate(hazard, spawnPosition, spawnRotation);
+                //Vector3 spawnPosition = new Vector3(Random.Range(-spawnValues.x, spawnValues.x), spawnValues.y, spawnValues.z);
+                //Instantiate(hazard, spawnPosition);
                 yield return new WaitForSeconds(spawnWait);
             }
             yield return new WaitForSeconds(waveWait);
@@ -61,7 +63,6 @@ public class GameControllerMain : MonoBehaviour
             }
         }
     }
-
 
     public void GameOver()
     {

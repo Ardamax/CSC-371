@@ -38,7 +38,7 @@ public class PlayerHealth : MonoBehaviour
 				// If the player doesn't have health, do some stuff
 				else
 				{
-					GameControllerMain.GameOver();
+					//GameControllerMain.GameOver();
 					
 				}
 			}
