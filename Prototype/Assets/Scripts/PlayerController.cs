@@ -25,19 +25,6 @@ public class PlayerController : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>();
     }
 
-
-    void Update()
-    {
-        if (Input.GetButton("Fire1") && Time.time > nextFire)
-        {
-            nextFire = Time.time + fireRate;
-            Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
-            
-        }
-    }
-
-
-
     void FixedUpdate()
     {
         float horizontalMovement = Input.GetAxis("Horizontal");

@@ -8,7 +8,7 @@ public class HitPlayer : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other) {
         if (other.gameObject.CompareTag("Player")) {
-            other.gameObject.SendMessage("OnDamage", damage);
+            other.gameObject.SendMessage("OnDamage", damage, SendMessageOptions.RequireReceiver);
             Destroy(gameObject);
         }
     }
