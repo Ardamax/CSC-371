@@ -11,6 +11,8 @@ TagManager:
   - CannonBall
   - PlayerProjectile
   - Cannon
+  - AnchorPoint
+  - Ship
   layers:
   - Default
   - TransparentFX
@@ -47,4 +49,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: BG
+    uniqueID: 4209493101
+    locked: 0
+  - name: parts
+    uniqueID: 2879636633
+    locked: 0
+  - name: ship
+    uniqueID: 3837563579
     locked: 0
