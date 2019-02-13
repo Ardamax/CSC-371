@@ -8,6 +8,7 @@ public class WingCode : MonoBehaviour
 
 
     bool snappable = false;
+    bool isSnapped = false;
     private Vector3 offset;
     private Vector2 PosOffset;
     Collider2D savedCol;
@@ -19,7 +20,13 @@ public class WingCode : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-
+        if (isSnapped) {
+            Debug.Log("snapped");
+            return;
+        }
+        else {
+            Debug.Log("Not snapped");
+        }
 
         if (col.tag == "Left Wing" || col.tag == "Right Wing")
         {
@@ -51,7 +58,7 @@ public class WingCode : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D col)
     {
-        if (col.tag == "AnchorPoint")
+        if (col.tag == "Left Wing" || col.tag == "Right Wing")
         {
             //Debug.Log("Out of range!");
             snappable = false;
@@ -65,12 +72,13 @@ public class WingCode : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             /* wing is disconnected but in range of ship; attach right*/
-            if ((gameObject.transform.parent == null) && (snappable == true))
+            if ((gameObject.transform.parent == null) && (snappable == true) && (savedCol != null) && (savedCol.gameObject.name == "Right Wing"))
             {
                 transform.parent = savedCol.transform;
                 transform.position = Vector2.zero;
                 transform.localPosition = new Vector2(0, 0);//(x +0.9f, y - 0.3f);
                 snappable = false;
+                isSnapped = true;
 
             }
             /* wing is connected to right wing; disconnect*/
@@ -78,6 +86,7 @@ public class WingCode : MonoBehaviour
             {
                 transform.parent = null;
                 snappable = true;
+                isSnapped = false;
             }
 
         }
@@ -86,7 +95,7 @@ public class WingCode : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.Q))
         {
             /* wing is disconnected but in range of ship; attach right*/
-            if ((gameObject.transform.parent == null) && (snappable == true))
+            if ((gameObject.transform.parent == null) && (snappable == true) && (savedCol != null) && (savedCol.gameObject.name == "Left Wing"))
             {
                 //Debug.Log("Connecting\n");
                 transform.parent = savedCol.transform;
@@ -97,15 +106,17 @@ public class WingCode : MonoBehaviour
                 //Debug.Log("location check\n");
 
                 snappable = false;
+                isSnapped = true;
 
             }
-            /* wing is connected to right wing; disconnect*/
+            /* wing is connected to left wing; disconnect*/
             else if ((gameObject.transform.parent) && (transform.parent.gameObject.name == "Left Wing") && (snappable == false))
             {
                 //Debug.Log("Disconnecting\n");
 
                 transform.parent = null;
                 snappable = true;
+                isSnapped = false;
             }
         }
     }

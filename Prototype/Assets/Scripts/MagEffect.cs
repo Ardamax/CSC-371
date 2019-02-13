@@ -7,7 +7,9 @@ public class MagEffect : MonoBehaviour
     //activates lightning effects
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        transform.GetChild(0).gameObject.SetActive(true);
+        if (collision.gameObject.CompareTag("Weapon")) {
+            transform.GetChild(0).gameObject.SetActive(true);
+        } 
     }
 
 
