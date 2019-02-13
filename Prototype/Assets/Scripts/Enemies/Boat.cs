@@ -16,6 +16,8 @@ public class Boat : MonoBehaviour, IEnemy
     private Vector2 target;
     private Vector2 position;
 
+    public int damage = 10;
+
     private GameObject player;
 
     void Start() {
@@ -61,5 +63,14 @@ public class Boat : MonoBehaviour, IEnemy
         target = new Vector2(player.transform.position.x, player.transform.position.y);
         float step = speed * Time.deltaTime;
         transform.position = Vector2.MoveTowards(transform.position, target, step);
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            other.gameObject.transform.root.SendMessage("OnDamage", damage, SendMessageOptions.RequireReceiver);
+            Destroy(gameObject);
+        }
     }
 }
