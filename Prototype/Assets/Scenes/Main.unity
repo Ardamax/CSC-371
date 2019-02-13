@@ -229,6 +229,7 @@ GameObject:
   - component: {fileID: 220551792}
   - component: {fileID: 220551794}
   - component: {fileID: 220551793}
+  - component: {fileID: 220551795}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -295,6 +296,22 @@ MonoBehaviour:
   shotSpawn: {fileID: 1727105606}
   shot: {fileID: 7462460035054612207, guid: e3c4b8a942e622d4889cd5375b397bb3, type: 3}
   fireRate: 1
+--- !u!114 &220551795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 220551791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6c7c3cdda4c0f34199133e68f16e809, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 10
+  repeatDamagePeriod: 2
+  hurtForce: 10
+  damageAmount: 10
 --- !u!1 &230727549 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1287915556241913966, guid: 155faf168f875df4d99cdceab24d7dc1,
@@ -639,7 +656,7 @@ GameObject:
   - component: {fileID: 555481291}
   m_Layer: 0
   m_Name: PlayerHealth
-  m_TagString: Untagged
+  m_TagString: HealthBar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1648,7 +1665,6 @@ GameObject:
   - component: {fileID: 1950502917}
   - component: {fileID: 1950502919}
   - component: {fileID: 1950502918}
-  - component: {fileID: 1950502920}
   m_Layer: 0
   m_Name: Body
   m_TagString: Player
@@ -1734,19 +1750,3 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1950502920
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1950502916}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6c7c3cdda4c0f34199133e68f16e809, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
-  repeatDamagePeriod: 2
-  hurtForce: 10
-  damageAmount: 10
