@@ -12,16 +12,13 @@ public class Spawner : MonoBehaviour
 
 	void Start ()
 	{
-		
 		InvokeRepeating("Spawn", spawnDelay, spawnTime);
 	}
 
 
 	void Spawn ()
 	{
-		
 		int enemyIndex = Random.Range(0, enemies.Length);
 		Instantiate(enemies[enemyIndex], transform.position, transform.rotation);
-
 	}
 }

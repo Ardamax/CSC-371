@@ -24,7 +24,10 @@ public class PlayerController : MonoBehaviour
     {
         rb2d = GetComponent<Rigidbody2D>();
     }
+    void OnDamage(int damage)
+    {
 
+    }
     void FixedUpdate()
     {
         float horizontalMovement = Input.GetAxis("Horizontal");

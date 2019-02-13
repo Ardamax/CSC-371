@@ -15,24 +15,24 @@ public class WingCode : MonoBehaviour
     float x = 0, y = 0;
     private void Start()
     {
-        Debug.Log("Start!");
+        //Debug.Log("Start!");
     }
 
     private void OnTriggerEnter2D(Collider2D col)
     {
         if (isSnapped) {
-            Debug.Log("snapped");
+            //Debug.Log("snapped");
             return;
         }
         else {
-            Debug.Log("Not snapped");
+            //Debug.Log("Not snapped");
         }
 
         if (col.tag == "Left Wing" || col.tag == "Right Wing")
         {
             snappable = true;
             savedCol = col;
-            Debug.Log("Snapable!");
+            //Debug.Log("Snapable!");
             /* orient potential parts to the slots they are near*/
             if (col.gameObject.name == "Left Wing")
             {

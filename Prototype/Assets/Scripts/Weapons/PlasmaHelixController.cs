@@ -10,6 +10,7 @@ public class PlasmaHelixController : MonoBehaviour, IWeapon
     private Vector2 spawnOffset = new Vector2(0f, 0.5f);
     private bool firing = false;
     private GameObject obj;
+    private IProjectile projectile;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +24,10 @@ public class PlasmaHelixController : MonoBehaviour, IWeapon
     {
         firing = false;
     }
-    public
+    public string toString()
+    {
+        return "PlasmaHelix";
+    }
     // Update is called once per frame
     void Update()
     {
@@ -34,10 +38,19 @@ public class PlasmaHelixController : MonoBehaviour, IWeapon
             obj = Instantiate(plasmaBallPrefab, new Vector2(gameObject.transform.position.x + spawnOffset.x,
                gameObject.transform.position.y + spawnOffset.y), Quaternion.identity);
             obj.GetComponent<PlasmaMover>().setCoefficient(0.5f);
-            
+            projectile = obj.GetComponent<IProjectile>();
+            if (gameObject.transform.root.CompareTag("Player"))
+                projectile.setTarget("Enemy");
+            else
+                projectile.setTarget("Player");
             obj = Instantiate(plasmaBallPrefab, new Vector2(gameObject.transform.position.x + spawnOffset.x,
                gameObject.transform.position.y + spawnOffset.y), Quaternion.identity);
             obj.GetComponent<PlasmaMover>().setCoefficient(-0.5f);
+            projectile = obj.GetComponent<IProjectile>();
+            if (gameObject.transform.root.CompareTag("Player"))
+                projectile.setTarget("Enemy");
+            else
+                projectile.setTarget("Player");
         }
     }
 }

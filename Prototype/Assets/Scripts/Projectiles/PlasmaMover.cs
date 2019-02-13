@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlasmaMover : MonoBehaviour
+public class PlasmaMover : MonoBehaviour, IProjectile
 {
     private Vector2 direction = new Vector2(0f, 1f);
     public float speed = 10f;
@@ -10,9 +10,16 @@ public class PlasmaMover : MonoBehaviour
     private float initializationTime;
     private float initialX;
     private float frequency = Mathf.PI * 4;
+    private string target;
+
+    public int damage = 2;
     void Start() {
         initializationTime = Time.timeSinceLevelLoad;
         initialX = gameObject.transform.position.x;
+    }
+    public void setTarget(string t)
+    {
+        target = t;
     }
     public void setDirection(Vector2 direction) {
         this.direction = direction;
@@ -34,5 +41,13 @@ public class PlasmaMover : MonoBehaviour
         float deltaTime = Time.timeSinceLevelLoad - initializationTime;
         gameObject.transform.Translate(direction * speed * Time.deltaTime);
         gameObject.transform.position = new Vector2(initialX + (coefficient * Mathf.Sin(frequency * deltaTime)), gameObject.transform.position.y);
+    }
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag(target))
+        {
+            other.gameObject.transform.root.SendMessage("OnDamage", damage, SendMessageOptions.RequireReceiver);
+            Destroy(gameObject);
+        }
     }
 }

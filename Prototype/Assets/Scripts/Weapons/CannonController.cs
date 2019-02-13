@@ -9,10 +9,10 @@ public class CannonController : MonoBehaviour, IWeapon
     private float timeSinceLastSpawned = 0f;
     private Vector2 spawnOffset = new Vector2(0f, 0.5f);
     private bool firing = false;
-    // Start is called before the first frame update
+    private IProjectile projectile;
+
     void Start()
     {
-        
     }
     public void fire()
     {
@@ -22,7 +22,6 @@ public class CannonController : MonoBehaviour, IWeapon
     {
         firing = false;
     }
-    public
     // Update is called once per frame
     void Update()
     {
@@ -30,8 +29,17 @@ public class CannonController : MonoBehaviour, IWeapon
         if (firing && timeSinceLastSpawned > spawnRate)
         {
             timeSinceLastSpawned = 0f;
-            Instantiate(cannonBallPrefab, new Vector2(gameObject.transform.position.x + spawnOffset.x,
-               gameObject.transform.position.y + spawnOffset.y), Quaternion.identity);
+            GameObject cannonBall = (GameObject)Instantiate(cannonBallPrefab, new Vector2(gameObject.transform.position.x,
+   gameObject.transform.position.y), transform.root.rotation);
+            projectile = cannonBall.GetComponent<IProjectile>();
+            if (gameObject.transform.root.CompareTag("Player"))
+                projectile.setTarget("Enemy");
+            else
+                projectile.setTarget("Player");
         }
+    }
+    public string toString()
+    {
+        return "Cannon";
     }
 }

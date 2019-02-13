@@ -19,7 +19,7 @@ public class GameControllerMain : MonoBehaviour
     private bool gameOver;
     private bool restart;
 
-
+    
 
     void Start()
     {
@@ -40,7 +40,6 @@ public class GameControllerMain : MonoBehaviour
             }
         }
     }
-
     IEnumerator SpawnWaves()
     {
         yield return new WaitForSeconds(startWait);
@@ -63,7 +62,6 @@ public class GameControllerMain : MonoBehaviour
             }
         }
     }
-
     public void GameOver()
     {
         gameOverText.text = "Game Over!";

@@ -3,8 +3,7 @@ using System.Collections;
 
 //This is a basic interface with a single required
 //method.
-public interface IWeapon
+public interface IShip
 {
-    void fire();
-    void stopFiring();
+    string getFaction();
 }

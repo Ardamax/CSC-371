@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface IProjectile
+public interface IEnemy
 {
-    void setTarget(string t);
+    void fire();
+    void move();
 }
