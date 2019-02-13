@@ -28,16 +28,17 @@ public class Battleship : MonoBehaviour, IEnemy
     public int fireDelay = 100;
     private int fireCooldown = 0;
 
+    public GameObject drop;
     void Start()
     {
         player = GameObject.Find("Player");
         r = gameObject.transform.Find("Body").GetComponent<SpriteRenderer>();
         leftWeapon = gameObject.transform.Find("Battleship Left Wing").gameObject.GetComponentInChildren<IWeapon>();
         rightWeapon = gameObject.transform.Find("Battleship Right Wing").gameObject.GetComponentInChildren<IWeapon>();
-        
+        drop = gameObject.transform.Find("Battleship Left Wing").GetChild(0).gameObject;
     }
 
-    void OnDamage(int damage)
+    public void OnDamage(int damage)
     {
         health = health - damage;
         r.color = Color.red;
@@ -45,10 +46,15 @@ public class Battleship : MonoBehaviour, IEnemy
 
         if (health <= 0)
         {
-            Destroy(gameObject);
+            die();
         }
     }
-
+    public void die()
+    {
+        Instantiate(drop, new Vector2(gameObject.transform.position.x,
+   gameObject.transform.position.y), Quaternion.identity);
+        Destroy(gameObject);
+    }
     void Update()
     {
         timeSinceHit += Time.deltaTime;

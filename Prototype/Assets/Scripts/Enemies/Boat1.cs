@@ -17,8 +17,8 @@ public class Boat1 : MonoBehaviour, IEnemy
     void Start() {
         r = GetComponent<SpriteRenderer>();
     }
-
-    void OnDamage(int damage) {
+    public void die() { }
+    public void OnDamage(int damage) {
         health = health - damage;
         r.color = Color.red;
         timeSinceHit = 0f;

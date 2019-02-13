@@ -25,7 +25,7 @@ public class Boat : MonoBehaviour, IEnemy
         r = gameObject.transform.Find("Body").GetComponent<SpriteRenderer>();
     }
 
-    void OnDamage(int damage)
+    public void OnDamage(int damage)
     {
         health = health - damage;
         r.color = Color.black;
@@ -33,10 +33,10 @@ public class Boat : MonoBehaviour, IEnemy
 
         if (health <= 0)
         {
-            Destroy(gameObject);
+            die();
         }
     }
-
+    public void die() { Destroy(gameObject); }
     void Update()
     {
         timeSinceHit += Time.deltaTime;
@@ -67,7 +67,7 @@ public class Boat : MonoBehaviour, IEnemy
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.transform.root.CompareTag("Player"))
         {
             other.gameObject.transform.root.SendMessage("OnDamage", damage, SendMessageOptions.RequireReceiver);
             Destroy(gameObject);

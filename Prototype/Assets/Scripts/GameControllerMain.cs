@@ -25,8 +25,8 @@ public class GameControllerMain : MonoBehaviour
     {
         gameOver = false;
         restart = false;
-        restartText.text = "";
-        gameOverText.text = "";
+        //restartText.text = "";
+        //gameOverText.text = "";
         StartCoroutine(SpawnWaves());
     }
 

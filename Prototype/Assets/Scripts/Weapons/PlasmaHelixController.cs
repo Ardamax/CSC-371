@@ -11,10 +11,12 @@ public class PlasmaHelixController : MonoBehaviour, IWeapon
     private bool firing = false;
     private GameObject obj;
     private IProjectile projectile;
+
+    private GameObject player;
     // Start is called before the first frame update
     void Start()
     {
-        
+        player = GameObject.Find("Player");
     }
     public void fire()
     {
@@ -28,6 +30,14 @@ public class PlasmaHelixController : MonoBehaviour, IWeapon
     {
         return "PlasmaHelix";
     }
+    public void aim(int aimSpeed)
+    {
+        Vector3 vectorToTarget = player.transform.position - transform.position;
+        float angle = Mathf.Atan2(vectorToTarget.y, vectorToTarget.x) * Mathf.Rad2Deg-90;
+        Quaternion q = Quaternion.AngleAxis(angle, Vector3.forward);
+
+        transform.rotation = Quaternion.Slerp(transform.rotation, q, Time.deltaTime * aimSpeed);
+    }
     // Update is called once per frame
     void Update()
     {
@@ -36,7 +46,7 @@ public class PlasmaHelixController : MonoBehaviour, IWeapon
         {
             timeSinceLastSpawned = 0f;
             obj = Instantiate(plasmaBallPrefab, new Vector2(gameObject.transform.position.x + spawnOffset.x,
-               gameObject.transform.position.y + spawnOffset.y), Quaternion.identity);
+               gameObject.transform.position.y + spawnOffset.y), transform.rotation);
             obj.GetComponent<PlasmaMover>().setCoefficient(0.5f);
             projectile = obj.GetComponent<IProjectile>();
             if (gameObject.transform.root.CompareTag("Player"))
@@ -44,7 +54,7 @@ public class PlasmaHelixController : MonoBehaviour, IWeapon
             else
                 projectile.setTarget("Player");
             obj = Instantiate(plasmaBallPrefab, new Vector2(gameObject.transform.position.x + spawnOffset.x,
-               gameObject.transform.position.y + spawnOffset.y), Quaternion.identity);
+               gameObject.transform.position.y + spawnOffset.y), transform.rotation);
             obj.GetComponent<PlasmaMover>().setCoefficient(-0.5f);
             projectile = obj.GetComponent<IProjectile>();
             if (gameObject.transform.root.CompareTag("Player"))
