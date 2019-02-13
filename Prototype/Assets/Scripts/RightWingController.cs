@@ -11,23 +11,33 @@ public class RightWingController : MonoBehaviour
 
     void Start()
     {
-        weapon = gameObject.GetComponentInChildren<IWeapon>();
-        if (gameObject.CompareTag("Right Wing"))
+        /* prevents nullreference if gun not present*/
+        if (gameObject.transform.childCount > 1)
         {
-            key = KeyCode.P;
-        }
-        else
-        {
-            // idk
+
         }
     }
 
     void Update()
     {
-        timeSinceLastSpawned += Time.deltaTime;
-        if (Input.GetKey(key))
-            weapon.fire();
-        else
-            weapon.stopFiring();
+        if (gameObject.transform.childCount > 1)
+        {
+            weapon = gameObject.GetComponentInChildren<IWeapon>();
+            if (gameObject.CompareTag("Right Wing"))
+            {
+                key = KeyCode.P;
+            }
+            else
+            {
+                // idk
+            }
+
+            timeSinceLastSpawned += Time.deltaTime;
+            if (Input.GetKey(key))
+                weapon.fire();
+            else
+                weapon.stopFiring();
+        }
+
     }
 }

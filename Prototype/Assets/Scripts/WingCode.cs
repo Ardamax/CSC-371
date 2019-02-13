@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿    using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -21,27 +21,27 @@ public class WingCode : MonoBehaviour
     {
 
 
-        if (col.tag == "AnchorPoint")
+        if (col.tag == "Left Wing" || col.tag == "Right Wing")
         {
             snappable = true;
             savedCol = col;
             Debug.Log("Snapable!");
             /* orient potential parts to the slots they are near*/
-            if (col.gameObject.name == "LeftWingHardPoint")
+            if (col.gameObject.name == "Left Wing")
             {
                 //  Debug.Log("LEFT!");
-                x = -2.2f;
-                y = 0.1f;
-                transform.eulerAngles = new Vector3(0, 0, 180);
+                //x = -2.2f;
+                //y = 0.1f;
+                //transform.eulerAngles = new Vector3(0, 0, 180);
 
 
             }
-            else if (col.gameObject.name == "RightWingHardPoint")
+            else if (col.gameObject.name == "Right Wing")
             {
                 //   Debug.Log("RIGHT!");
-                x = 2.7f;
-                y = 0.3f;
-                transform.eulerAngles = new Vector3(0, 0, 0);
+               // x = 2.7f;
+                //y = 0.3f;
+               // transform.eulerAngles = new Vector3(0, 0, 0);
 
             }
 
@@ -69,12 +69,12 @@ public class WingCode : MonoBehaviour
             {
                 transform.parent = savedCol.transform;
                 transform.position = Vector2.zero;
-                transform.localPosition = new Vector2(x +0.9f, y - 0.3f);
+                transform.localPosition = new Vector2(0, 0);//(x +0.9f, y - 0.3f);
                 snappable = false;
 
             }
             /* wing is connected to right wing; disconnect*/
-            else if ((gameObject.transform.parent) && (transform.parent.gameObject.name == "RightWingHardPoint") && (snappable == false))
+            else if ((gameObject.transform.parent) && (transform.parent.gameObject.name == "Right Wing") && (snappable == false))
             {
                 transform.parent = null;
                 snappable = true;
@@ -93,14 +93,14 @@ public class WingCode : MonoBehaviour
                // Debug.Log("parent check\n");
 
                 transform.position = Vector2.zero;
-                transform.localPosition = new Vector2(x-1.45f, y -0.1f);
+                transform.localPosition = new Vector2(0, 0);//(x-1.45f, y -0.1f);
                 //Debug.Log("location check\n");
 
                 snappable = false;
 
             }
             /* wing is connected to right wing; disconnect*/
-            else if ((gameObject.transform.parent) && (transform.parent.gameObject.name == "LeftWingHardPoint") && (snappable == false))
+            else if ((gameObject.transform.parent) && (transform.parent.gameObject.name == "Left Wing") && (snappable == false))
             {
                 //Debug.Log("Disconnecting\n");
 

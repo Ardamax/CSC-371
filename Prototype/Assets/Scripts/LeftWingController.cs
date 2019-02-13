@@ -10,20 +10,31 @@ public class LeftWingController : MonoBehaviour
     private Vector2 spawnOffset = new Vector2(0f, 0.5f);
 
     void Start() {
-        weapon = gameObject.GetComponentInChildren<IWeapon>();
-        if (gameObject.CompareTag("Left Wing")) {
-            key = KeyCode.O;
-        }
-        else {
-            // idk
+        if (gameObject.transform.childCount > 1)
+        {
+
         }
     }
 
     void Update() {
-        timeSinceLastSpawned += Time.deltaTime;
-        if (Input.GetKey(key))
-            weapon.fire();
-        else
-            weapon.stopFiring();
+        if (gameObject.transform.childCount > 1)
+        {
+            weapon = gameObject.GetComponentInChildren<IWeapon>();
+
+
+            if (gameObject.CompareTag("Left Wing"))
+            {
+                key = KeyCode.O;
+            }
+            else
+            {
+                // idk
+            }
+            timeSinceLastSpawned += Time.deltaTime;
+            if (Input.GetKey(key))
+                weapon.fire();
+            else
+                weapon.stopFiring();
+        }
     }
 }
