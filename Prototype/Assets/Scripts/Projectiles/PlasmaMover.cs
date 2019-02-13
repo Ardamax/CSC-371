@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SinMover : MonoBehaviour
+public class PlasmaMover : MonoBehaviour
 {
     private Vector2 direction = new Vector2(0f, 1f);
-    private float speed;
+    public float speed = 10f;
     private float coefficient;
     private float initializationTime;
     private float initialX;

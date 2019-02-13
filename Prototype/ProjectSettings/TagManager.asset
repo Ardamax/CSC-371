@@ -13,6 +13,8 @@ TagManager:
   - Cannon
   - AnchorPoint
   - Ship
+  - HealthBar
+  - Weapon
   layers:
   - Default
   - TransparentFX
@@ -58,4 +60,7 @@ TagManager:
     locked: 0
   - name: ship
     uniqueID: 3837563579
+    locked: 0
+  - name: Magnet
+    uniqueID: 2203950221
     locked: 0
