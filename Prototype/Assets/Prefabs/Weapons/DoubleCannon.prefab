@@ -13,9 +13,24 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.28, y: -0.03}
+  m_Offset: {x: 0.28, y: 0}
   m_Size: {x: 0.55, y: 1.7}
   m_Direction: 0
+--- !u!114 &3621843282505374613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5701115200060800444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27aa8c3de47d25b4b8bfa049bc09c23d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnRate: 0.1
+  cannonBallPrefab: {fileID: 7462460035054612207, guid: e3c4b8a942e622d4889cd5375b397bb3,
+    type: 3}
 --- !u!1001 &6828009327040366034
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31,7 +46,7 @@ PrefabInstance:
     - target: {fileID: 1287915556241913967, guid: 155faf168f875df4d99cdceab24d7dc1,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1287915556241913967, guid: 155faf168f875df4d99cdceab24d7dc1,
         type: 3}
@@ -97,9 +112,10 @@ PrefabInstance:
     - target: {fileID: 6924512421080643677, guid: 155faf168f875df4d99cdceab24d7dc1,
         type: 3}
       propertyPath: m_Offset.y
-      value: -0.03
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1287915556241913960, guid: 155faf168f875df4d99cdceab24d7dc1, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 155faf168f875df4d99cdceab24d7dc1, type: 3}
 --- !u!1 &5701115200060800444 stripped
 GameObject:
