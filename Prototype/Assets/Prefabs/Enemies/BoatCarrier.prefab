@@ -68,9 +68,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAttacking: 0
   health: 100
-  boatSpawnDelay: 50
-  fireWeaponDelay: 10
+  aimSpeed: 5
+  boatSpawnDelay: 500
+  fireWeaponDelay: 100
   boat: {fileID: 6242946513699068825, guid: c5600b7aaaa1934489d9bf30c2d1957c, type: 3}
+  moveAmount: 200
+  speed: 1.5
 --- !u!1 &8740219159719114662
 GameObject:
   m_ObjectHideFlags: 0
