@@ -13,10 +13,9 @@ GameObject:
   - component: {fileID: 5913533945937023688}
   - component: {fileID: 9171909156496386189}
   - component: {fileID: 2659273492084528112}
-  - component: {fileID: 1328301124062793486}
   m_Layer: 0
   m_Name: Plasmaball
-  m_TagString: Untagged
+  m_TagString: PlayerProjectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -133,16 +132,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
---- !u!114 &1328301124062793486
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8153978430319923294}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3e607d1e78c9cb429a240017bbdd633, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 1
+  damage: 2
