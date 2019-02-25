@@ -36,6 +36,12 @@ public class BoatCarrier : MonoBehaviour, IEnemy
         weapon = gameObject.GetComponentInChildren<IWeapon>();
         weaponPrefab = gameObject.transform.GetChild(0).GetChild(0).gameObject;
     }
+
+    public void startAttacking() {
+        // Spencer
+        this.isAttacking = true;
+    }
+
     public void move()
     {
         if (moveCount > moveAmount)
@@ -89,17 +95,18 @@ public class BoatCarrier : MonoBehaviour, IEnemy
     }
     void Update()
     {
-        timeSinceHit += Time.deltaTime;
-        timeSinceLastAttack += Time.deltaTime;
+        if (isAttacking) {
+            timeSinceHit += Time.deltaTime;
+            timeSinceLastAttack += Time.deltaTime;
 
-        if (r.color != Color.white && timeSinceHit >= damageTime)
-        {
-            r.color = Color.white;
+            if (r.color != Color.white && timeSinceHit >= damageTime)
+            {
+                r.color = Color.white;
+            }
+            weaponPrefab.SendMessage("aim", aimSpeed);
+            fire();
+            move();
         }
-        weaponPrefab.SendMessage("aim", aimSpeed);
-        fire();
-        move();
-
     }
     public void aim()
     {

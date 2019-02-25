@@ -121,6 +121,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4628723199610802540}
   - component: {fileID: 8363622031602889288}
+  - component: {fileID: 4168924410378850696}
   - component: {fileID: 8350363057738198201}
   m_Layer: 0
   m_Name: Battleship
@@ -158,12 +159,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fbd82ffb44f1fe48b6b8ff93b5caf89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isAttacking: 1
+  isAttacking: 0
   health: 50
   moveAmount: 200
   speed: 1.5
   fireDelay: 50
   drop: {fileID: 0}
+--- !u!114 &4168924410378850696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6242946513699068825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5acd75d20bd191d42b505754bdfe7b77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minX: -7
+  maxX: 7
+  initialY: 6.5
+  targetY: 3.5
+  moveSpeed: 1
 --- !u!50 &8350363057738198201
 Rigidbody2D:
   serializedVersion: 4

@@ -25,6 +25,10 @@ public class Boat : MonoBehaviour, IEnemy
         r = gameObject.transform.Find("Body").GetComponent<SpriteRenderer>();
     }
 
+    public void startAttacking() {
+        this.isAttacking = true;
+    }
+
     public void OnDamage(int damage)
     {
         health = health - damage;
@@ -39,15 +43,17 @@ public class Boat : MonoBehaviour, IEnemy
     public void die() { Destroy(gameObject); }
     void Update()
     {
-        timeSinceHit += Time.deltaTime;
-        timeSinceLastAttack += Time.deltaTime;
+        if (isAttacking) {
+            timeSinceHit += Time.deltaTime;
+            timeSinceLastAttack += Time.deltaTime;
 
-        if (r.color != Color.white && timeSinceHit >= damageTime)
-        {
-            r.color = Color.white;
+            if (r.color != Color.white && timeSinceHit >= damageTime)
+            {
+                r.color = Color.white;
+            }
+            move();
+            fire();
         }
-        move();
-        fire();
     }
 
     public void fire() {

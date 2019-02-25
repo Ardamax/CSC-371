@@ -38,6 +38,11 @@ public class Battleship : MonoBehaviour, IEnemy
         drop = gameObject.transform.Find("Battleship Left Wing").GetChild(0).gameObject;
     }
 
+    public void startAttacking() {
+        // Spencer
+        this.isAttacking = true;
+    }
+
     public void OnDamage(int damage)
     {
         health = health - damage;
@@ -52,20 +57,22 @@ public class Battleship : MonoBehaviour, IEnemy
     public void die()
     {
         Instantiate(drop, new Vector2(gameObject.transform.position.x,
-   gameObject.transform.position.y), Quaternion.identity);
+            gameObject.transform.position.y), Quaternion.identity);
         Destroy(gameObject);
     }
     void Update()
     {
-        timeSinceHit += Time.deltaTime;
-        timeSinceLastAttack += Time.deltaTime;
+        if (isAttacking) {
+            timeSinceHit += Time.deltaTime;
+            timeSinceLastAttack += Time.deltaTime;
 
-        if (r.color != Color.white && timeSinceHit >= damageTime)
-        {
-            r.color = Color.white;
+            if (r.color != Color.white && timeSinceHit >= damageTime)
+            {
+                r.color = Color.white;
+            }
+            move();
+            fire();
         }
-        move();
-        fire();
     }
 
     public void fire()
