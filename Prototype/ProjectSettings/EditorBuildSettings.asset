@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Combat levels/OverTheWells(Level2).unity
     guid: 283bd941a1381164f89e655b4c30824c
   - enabled: 1
+    path: Assets/Scenes/Cutscenes/IntoTheWellsWin.unity
+    guid: aa065905b1fa24340bdf434c5e74341c
+  - enabled: 1
     path: Assets/Scenes/Combat levels/Ace2(Level3).unity
     guid: 06bb7645c944ead4b81b51435bd86696
   - enabled: 1
