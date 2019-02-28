@@ -23,7 +23,8 @@ public class PlayerHealth : MonoBehaviour
 	}
 
 
-	void OnCollisionEnter2D (Collision2D col)
+
+    void OnCollisionEnter2D (Collision2D col)
 	{
 		// If the colliding gameobject is an Enemy
 		if(col.gameObject.tag == "Enemy")
@@ -53,6 +54,11 @@ public class PlayerHealth : MonoBehaviour
         UpdateHealthBar();
         if(health <= 0f)
         {
+            Scene scene = SceneManager.GetActiveScene();
+            if( scene.name == "Level1")
+            {
+                SceneManager.LoadScene(3);
+            }
             SceneManager.LoadScene(0);
 
         }
