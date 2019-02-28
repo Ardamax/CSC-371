@@ -11,12 +11,15 @@ public class PlayerHealth : MonoBehaviour
 
 	private SpriteRenderer healthBar;			// Reference to the sprite renderer of the health bar.
 	private float lastHitTime;					// The time at which the player was last hit.
-	private Vector3 healthScale;					
+	private Vector3 healthScale;
+    private string sceneName;
 
-	void Awake ()
+
+    void Awake ()
 	{
-
-		healthBar = GameObject.Find("HealthBar").GetComponent<SpriteRenderer>();
+        sceneName = SceneManager.GetActiveScene().name;
+        Debug.Log("the scene " + sceneName);
+        healthBar = GameObject.Find("HealthBar").GetComponent<SpriteRenderer>();
 
 		// Getting the intial scale of the healthbar (whilst the player has full health).
 		healthScale = healthBar.transform.localScale;
@@ -54,12 +57,11 @@ public class PlayerHealth : MonoBehaviour
         UpdateHealthBar();
         if(health <= 0f)
         {
-            Scene scene = SceneManager.GetActiveScene();
-            if( scene.name == "Level1")
+            if (sceneName == "Level1")
             {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
-            SceneManager.LoadScene(0);
+            else SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
 
         }
     }
