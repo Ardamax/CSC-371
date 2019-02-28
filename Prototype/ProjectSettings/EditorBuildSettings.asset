@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Combat levels/Level1.unity
     guid: c9b08ec39ba28ab46955697599005402
   - enabled: 1
+    path: Assets/Scenes/Cutscenes/PercyDeath.unity
+    guid: 29c5ff76466017842b071d54004a4ab3
+  - enabled: 1
     path: Assets/Scenes/Combat levels/OverTheWells(Level2).unity
     guid: 283bd941a1381164f89e655b4c30824c
   - enabled: 1
