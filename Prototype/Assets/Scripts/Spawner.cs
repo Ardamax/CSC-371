@@ -12,6 +12,7 @@ public class Spawner : MonoBehaviour
     public GameObject Boss;
     public GameObject[] baddies;
     public float BossSpawnsIn = 120.0f;
+    bool BossSpawned = false;
 
 
 
@@ -22,13 +23,16 @@ public class Spawner : MonoBehaviour
 	}
 
 
-    void fixedupdate()
+    void FixedUpdate()
     {
         BossSpawnsIn -= Time.deltaTime;
-        if (BossSpawnsIn < 0)
-        {
-            Debug.Log("THIS IS HAPPENEING");
-            BossSpawn();
+        if (BossSpawnsIn <0 )
+        {if (BossSpawned== false)
+            {
+                BossSpawn();
+                BossSpawned = true;
+
+            }
         }
 
     }
