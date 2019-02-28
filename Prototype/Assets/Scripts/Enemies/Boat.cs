@@ -73,7 +73,7 @@ public class Boat : MonoBehaviour, IEnemy
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.transform.root.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player"))
         {
             other.gameObject.transform.root.SendMessage("OnDamage", damage, SendMessageOptions.RequireReceiver);
             Destroy(gameObject);
