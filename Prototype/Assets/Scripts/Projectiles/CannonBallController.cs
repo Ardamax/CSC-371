@@ -22,7 +22,7 @@ public class CannonBallController : MonoBehaviour, IProjectile
         }
         gameObject.transform.Translate(new Vector3(0f, 1f, 0f) * speed * Time.deltaTime);
 
-        if (transform.position.y > 20)
+        if (transform.position.y > 20 || transform.position.y < -20)
         {
             Destroy(gameObject);
         }
