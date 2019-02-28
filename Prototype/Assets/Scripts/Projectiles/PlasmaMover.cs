@@ -22,7 +22,7 @@ public class PlasmaMover : MonoBehaviour, IProjectile
         target = t;
     }
     public void setDirection(Vector2 direction) {
-        this.direction = direction;
+        this.direction = Vector2.ClampMagnitude(direction, 1);
     }
 
     public void setSpeed(float speed) {
@@ -40,7 +40,7 @@ public class PlasmaMover : MonoBehaviour, IProjectile
     void Update() {
         float deltaTime = Time.timeSinceLevelLoad - initializationTime;
         gameObject.transform.Translate(direction * speed * Time.deltaTime);
-        gameObject.transform.position = new Vector2(initialX + (coefficient * Mathf.Sin(frequency * deltaTime)), gameObject.transform.position.y);
+        gameObject.transform.position = new Vector2(gameObject.transform.position.x + (coefficient * Mathf.Sin(frequency * deltaTime)), gameObject.transform.position.y);
     }
     void OnTriggerEnter2D(Collider2D other)
     {

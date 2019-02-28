@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BoatCarrier : MonoBehaviour, IEnemy
 {
     public bool isAttacking = false;
     public int health = 100;
     public int aimSpeed = 5;
+    private string sceneName;
 
     private SpriteRenderer r;
     private float timeSinceHit = 0f;
@@ -35,6 +37,7 @@ public class BoatCarrier : MonoBehaviour, IEnemy
         r = gameObject.transform.Find("Body").GetComponent<SpriteRenderer>();
         weapon = gameObject.GetComponentInChildren<IWeapon>();
         weaponPrefab = gameObject.transform.GetChild(0).GetChild(0).gameObject;
+        sceneName = SceneManager.GetActiveScene().name;
     }
 
     public void startAttacking() {
@@ -85,14 +88,22 @@ public class BoatCarrier : MonoBehaviour, IEnemy
 
         if (health <= 0)
         {
+            if (sceneName != "Level1")
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            }
             die();
         }
     }
+
     public void die() {
         Instantiate(weaponPrefab, new Vector2(gameObject.transform.position.x,
    gameObject.transform.position.y), Quaternion.identity);
         Destroy(gameObject);
+
     }
+
+
     void Update()
     {
         if (isAttacking) {

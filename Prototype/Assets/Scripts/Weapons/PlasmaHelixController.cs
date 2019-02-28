@@ -11,6 +11,7 @@ public class PlasmaHelixController : MonoBehaviour, IWeapon
     private bool firing = false;
     private GameObject obj;
     private IProjectile projectile;
+    private Vector2 vectorToTarget;
 
     private GameObject player;
     // Start is called before the first frame update
@@ -32,7 +33,7 @@ public class PlasmaHelixController : MonoBehaviour, IWeapon
     }
     public void aim(int aimSpeed)
     {
-        Vector3 vectorToTarget = player.transform.position - transform.position;
+        vectorToTarget = player.transform.position - transform.position;
         float angle = Mathf.Atan2(vectorToTarget.y, vectorToTarget.x) * Mathf.Rad2Deg-90;
         Quaternion q = Quaternion.AngleAxis(angle, Vector3.forward);
 
@@ -47,7 +48,8 @@ public class PlasmaHelixController : MonoBehaviour, IWeapon
             timeSinceLastSpawned = 0f;
             obj = Instantiate(plasmaBallPrefab, new Vector2(gameObject.transform.position.x + spawnOffset.x,
                gameObject.transform.position.y + spawnOffset.y), transform.rotation);
-            obj.GetComponent<PlasmaMover>().setCoefficient(0.5f);
+            obj.GetComponent<PlasmaMover>().setCoefficient(0.1f);
+            //obj.GetComponent<PlasmaMover>().setDirection(vectorToTarget);
             projectile = obj.GetComponent<IProjectile>();
             if (gameObject.transform.root.CompareTag("Player"))
                 projectile.setTarget("Enemy");
@@ -55,7 +57,8 @@ public class PlasmaHelixController : MonoBehaviour, IWeapon
                 projectile.setTarget("Player");
             obj = Instantiate(plasmaBallPrefab, new Vector2(gameObject.transform.position.x + spawnOffset.x,
                gameObject.transform.position.y + spawnOffset.y), transform.rotation);
-            obj.GetComponent<PlasmaMover>().setCoefficient(-0.5f);
+            obj.GetComponent<PlasmaMover>().setCoefficient(-0.1f);
+            //obj.GetComponent<PlasmaMover>().setDirection(vectorToTarget);
             projectile = obj.GetComponent<IProjectile>();
             if (gameObject.transform.root.CompareTag("Player"))
                 projectile.setTarget("Enemy");

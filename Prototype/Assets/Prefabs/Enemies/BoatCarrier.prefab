@@ -43,7 +43,7 @@ Rigidbody2D:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3344995502531348885}
   m_BodyType: 1
-  m_Simulated: 0
+  m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
@@ -88,7 +88,7 @@ MonoBehaviour:
   health: 100
   aimSpeed: 5
   boatSpawnDelay: 500
-  fireWeaponDelay: 100
+  fireWeaponDelay: 35
   boat: {fileID: 6242946513699068825, guid: c5600b7aaaa1934489d9bf30c2d1957c, type: 3}
   moveAmount: 200
   speed: 1.5
