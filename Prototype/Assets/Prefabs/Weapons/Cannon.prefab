@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1287915556241913960}
   - component: {fileID: 6924512421080643677}
   - component: {fileID: 7131836336875747161}
+  - component: {fileID: 4661389105199625061}
   m_Layer: 0
   m_Name: Cannon
   m_TagString: Weapon
@@ -125,3 +126,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06cfc6aa772dc2b408d289e14e880ed8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  snappable: 0
+  isSnapped: 0
+--- !u!114 &4661389105199625061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287915556241913966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c29c6e1933ee4c4d9c15ebf5145d774, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+  weapon: {fileID: 0}

@@ -56,6 +56,7 @@ public class Battleship : MonoBehaviour, IEnemy
     }
     public void die()
     {
+        drop.GetComponent<WingCode>().isSnapped = false;
         Instantiate(drop, new Vector2(gameObject.transform.position.x,
             gameObject.transform.position.y), Quaternion.identity);
         Destroy(gameObject);

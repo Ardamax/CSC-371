@@ -97,6 +97,7 @@ public class BoatCarrier : MonoBehaviour, IEnemy
     }
 
     public void die() {
+        weaponPrefab.GetComponent<WingCode>().isSnapped = false;
         Instantiate(weaponPrefab, new Vector2(gameObject.transform.position.x,
    gameObject.transform.position.y), Quaternion.identity);
         Destroy(gameObject);

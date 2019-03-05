@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 397783377047556355}
   - component: {fileID: 9017258386945328775}
   - component: {fileID: 7246724955981970570}
+  - component: {fileID: 3972014140047194339}
   - component: {fileID: 3634211440036114869}
   m_Layer: 0
   m_Name: DeployableShieldShooter
@@ -114,6 +115,20 @@ MonoBehaviour:
   cooldownDuration: 10
   deployableShieldPrefab: {fileID: 8293168069757058322, guid: fb850fcd3f5f41c4b89eef09061bf48f,
     type: 3}
+--- !u!114 &3972014140047194339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337046341038363527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c29c6e1933ee4c4d9c15ebf5145d774, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+  weapon: {fileID: 0}
 --- !u!114 &3634211440036114869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -126,6 +141,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06cfc6aa772dc2b408d289e14e880ed8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  snappable: 0
+  isSnapped: 0
 --- !u!1 &7279275038759023679
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,8 +7,8 @@ public class WingCode : MonoBehaviour
 
 
 
-    bool snappable = false;
-    bool isSnapped = false;
+    public bool snappable = false;
+    public bool isSnapped = false;
     private Vector3 offset;
     private Vector2 PosOffset;
     Collider2D savedCol;
