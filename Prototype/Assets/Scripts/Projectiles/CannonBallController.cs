@@ -8,10 +8,12 @@ public class CannonBallController : MonoBehaviour, IProjectile
     private string target;
     private SpriteRenderer r;
     public float damage = 1;
-    public float speed;
-
+    private float player_bullet_speed = 10;
+    private float enemy_bullet_speed = 3;
+    private float speed;
     void Start()
     {
+        speed = 100;
         r = GetComponent<SpriteRenderer>();
     }
     void Update()
@@ -19,7 +21,10 @@ public class CannonBallController : MonoBehaviour, IProjectile
         if (target == "Player")
         {
             r.color = Color.red;
+            speed = enemy_bullet_speed;
         }
+        else
+            speed = player_bullet_speed;
         gameObject.transform.Translate(new Vector3(0f, 1f, 0f) * speed * Time.deltaTime);
 
         if (transform.position.y > 20 || transform.position.y < -20)

@@ -47,7 +47,10 @@ public class Legionnaire : MonoBehaviour, IEnemy
 
         //deploy shield if it hasn't been deployed yet
         if (weapon != null)
+        {
             deploy = true;
+            drop.GetComponent<WingCode>().isSnapped = false;
+        }
 
         if (health <= 0)
         {
@@ -82,6 +85,8 @@ public class Legionnaire : MonoBehaviour, IEnemy
                 break;
             case 2:
                 GameObject shield = GameObject.Find("DeployableShieldShooter");
+                shield.transform.rotation = Quaternion.identity;
+                shield.transform.localScale = new Vector3(0.75f, 0.75f, 0.75f);
                 shield.transform.parent = null;
                 break;
             case 3:

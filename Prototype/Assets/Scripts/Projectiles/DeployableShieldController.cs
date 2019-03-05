@@ -48,7 +48,7 @@ public class DeployableShieldController : MonoBehaviour
 
     void OnDamage(int damage) {
         currentHealth -= damage;
-        if (health <= 0) {
+        if (currentHealth <= 10) {
             Destroy(gameObject);
         }
         else {
