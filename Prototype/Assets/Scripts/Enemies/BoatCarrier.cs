@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class BoatCarrier : MonoBehaviour, IEnemy
 {
     public bool isAttacking = false;
-    public int health = 100;
+    public int health = 200;
     public int aimSpeed = 5;
     private string sceneName;
 
