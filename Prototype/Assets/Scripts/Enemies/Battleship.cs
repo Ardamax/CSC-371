@@ -6,7 +6,7 @@ public class Battleship : MonoBehaviour, IEnemy
 {
     public bool isAttacking = false;
     public int health = 20;
-    public int moveAmount = 200;
+    public int moveAmount = 250;
     private int moveCount = 0;
     public float speed = 1.5f;
     private int direction = 1;
