@@ -17,7 +17,7 @@ public class CannonController : MonoBehaviour, IWeapon
 
     void Start()
     {
-        maxDurability = 200;
+        maxDurability = 300;
         durability = maxDurability;
         r = GetComponent<SpriteRenderer>();
     }

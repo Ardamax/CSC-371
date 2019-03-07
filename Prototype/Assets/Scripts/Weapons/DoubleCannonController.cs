@@ -23,7 +23,7 @@ public class DoubleCannonController : MonoBehaviour, IWeapon
     // Start is called before the first frame update
     void Start()
     {
-        maxDurability = 100;
+        maxDurability = 80;
         durability = maxDurability;
         r = GetComponent<SpriteRenderer>();
     }

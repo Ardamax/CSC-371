@@ -31,7 +31,7 @@ MonoBehaviour:
   spawnRate: 0.1
   cannonBallPrefab: {fileID: 7462460035054612207, guid: e3c4b8a942e622d4889cd5375b397bb3,
     type: 3}
-  maxDurability: 200
+  maxDurability: 80
 --- !u!1001 &6828009327040366034
 PrefabInstance:
   m_ObjectHideFlags: 0

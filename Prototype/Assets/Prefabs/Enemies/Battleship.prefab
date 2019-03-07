@@ -163,7 +163,7 @@ MonoBehaviour:
   health: 20
   moveAmount: 200
   speed: 1.5
-  fireDelay: 50
+  fireDelay: 100
   drop: {fileID: 0}
 --- !u!114 &4168924410378850696
 MonoBehaviour:

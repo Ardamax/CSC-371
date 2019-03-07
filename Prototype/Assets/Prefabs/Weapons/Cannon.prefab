@@ -98,7 +98,7 @@ MonoBehaviour:
   spawnRate: 0.1
   cannonBallPrefab: {fileID: 7462460035054612207, guid: e3c4b8a942e622d4889cd5375b397bb3,
     type: 3}
-  maxDurability: 400
+  maxDurability: 300
 --- !u!70 &6924512421080643677
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
