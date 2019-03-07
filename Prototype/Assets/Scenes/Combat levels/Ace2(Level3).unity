@@ -808,7 +808,7 @@ MonoBehaviour:
   - {fileID: 6242946513699068825, guid: 8ef0eca4a32ba5142afa94e77423032f, type: 3}
   - {fileID: 6242946513699068825, guid: c5600b7aaaa1934489d9bf30c2d1957c, type: 3}
   - {fileID: 6242946513699068825, guid: 8ef0eca4a32ba5142afa94e77423032f, type: 3}
-  Boss: {fileID: 0}
+  Boss: {fileID: 3344995502531348885, guid: af146a53a5e7d81468baec6f44c567fa, type: 3}
   baddies: []
   BossSpawnsIn: 85
 --- !u!1 &1206615938

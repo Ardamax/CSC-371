@@ -601,8 +601,12 @@ MonoBehaviour:
   - {fileID: 6242946513699068825, guid: 8ef0eca4a32ba5142afa94e77423032f, type: 3}
   - {fileID: 6242946513699068825, guid: c5600b7aaaa1934489d9bf30c2d1957c, type: 3}
   - {fileID: 6242946513699068825, guid: 8ef0eca4a32ba5142afa94e77423032f, type: 3}
-  Boss: {fileID: 0}
-  baddies: []
+  Boss: {fileID: 2819624261714508437, guid: 06f1ebc746e3ecb4e8db9aea07784a85, type: 3}
+  baddies:
+  - {fileID: 6242946513699068825, guid: c5600b7aaaa1934489d9bf30c2d1957c, type: 3}
+  - {fileID: 6242946513699068825, guid: c5600b7aaaa1934489d9bf30c2d1957c, type: 3}
+  - {fileID: 6242946513699068825, guid: c5600b7aaaa1934489d9bf30c2d1957c, type: 3}
+  - {fileID: 6242946513699068825, guid: 8ef0eca4a32ba5142afa94e77423032f, type: 3}
   BossSpawnsIn: 85
 --- !u!1 &1206615938
 GameObject:

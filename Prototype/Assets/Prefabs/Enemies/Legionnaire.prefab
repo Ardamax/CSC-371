@@ -184,7 +184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isAttacking: 0
-  health: 10
+  health: 15
   damage: 10
   drop: {fileID: 0}
 --- !u!1 &6528472380729387232
@@ -434,11 +434,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9173206612296931963}
     m_Modifications:
-    - target: {fileID: 1337046341038363527, guid: afafd1b12918ad4469877ba8d3938cc5,
-        type: 3}
-      propertyPath: m_Name
-      value: DeployableShieldShooter
-      objectReference: {fileID: 0}
     - target: {fileID: 5680558231698290466, guid: afafd1b12918ad4469877ba8d3938cc5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -508,6 +503,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1337046341038363527, guid: afafd1b12918ad4469877ba8d3938cc5,
+        type: 3}
+      propertyPath: m_Name
+      value: DeployableShieldShooter
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afafd1b12918ad4469877ba8d3938cc5, type: 3}
