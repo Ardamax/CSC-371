@@ -4,7 +4,8 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {	
-	public float health = 10f;					// The player's health.
+	public float initialHealth;			// The player's starting health
+	private float health;				// The player's current health.
 	public float repeatDamagePeriod = 2f;						
 	public float hurtForce = 10f;				
 	public float damageAmount = 10f;			//if crashing into enemy get damaged this amount
@@ -25,7 +26,14 @@ public class PlayerHealth : MonoBehaviour
 		healthScale = healthBar.transform.localScale;
 	}
 
+	void Start() {
+		resetHealth();
+	}
 
+	public void resetHealth() {
+		health = initialHealth;
+		UpdateHealthBar();
+	}
 
     void OnCollisionEnter2D (Collision2D col)
 	{
