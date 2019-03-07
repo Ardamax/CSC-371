@@ -14,10 +14,25 @@ public class PlasmaHelixController : MonoBehaviour, IWeapon
     private Vector2 vectorToTarget;
 
     private GameObject player;
+
+    public int maxDurability;
+    private int durability;
+    private SpriteRenderer r;
     // Start is called before the first frame update
     void Start()
     {
+        maxDurability = 150;
+        durability = maxDurability;
+        r = GetComponent<SpriteRenderer>();
         player = GameObject.Find("Player");
+    }
+    public void degrade()
+    {
+        durability--;
+        if (durability <= maxDurability / 4)
+            r.color = Color.red;
+        if (durability < 1)
+            Destroy(gameObject);
     }
     public void fire()
     {
@@ -64,6 +79,7 @@ public class PlasmaHelixController : MonoBehaviour, IWeapon
                 projectile.setTarget("Enemy");
             else
                 projectile.setTarget("Player");
+            degrade();
         }
     }
 }

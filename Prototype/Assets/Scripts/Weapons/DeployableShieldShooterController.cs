@@ -14,7 +14,15 @@ public class DeployableShieldShooterController : MonoBehaviour, IWeapon
     private bool firing = false;
     private IProjectile projectile;
 
+    public int maxDurability;
+    private int durability;
+    private SpriteRenderer r;
+
     void Start() {
+        maxDurability = 4;
+        durability = maxDurability;
+        r = GetComponent<SpriteRenderer>();
+
         timeSinceLastSpawned = cooldownDuration;
         cooldownBar = gameObject.transform.Find("CooldownBar").gameObject;
         initialCooldownScale = cooldownBar.transform.localScale;
@@ -23,7 +31,14 @@ public class DeployableShieldShooterController : MonoBehaviour, IWeapon
     public void fire() {
         firing = true;
     }
-
+    public void degrade()
+    {
+        durability--;
+        if (durability <= maxDurability / 4)
+            r.color = Color.red;
+        if (durability < 1)
+            Destroy(gameObject);
+    }
     public void stopFiring() {
         firing = false;
     }
@@ -40,7 +55,8 @@ public class DeployableShieldShooterController : MonoBehaviour, IWeapon
             }
             else {
                 deployableShield.tag = "Enemy";
-            }       
+            }
+            degrade();
         }
         updateCooldownBar();
     }

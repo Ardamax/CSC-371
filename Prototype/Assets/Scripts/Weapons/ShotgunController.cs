@@ -13,8 +13,23 @@ public class ShotgunController : MonoBehaviour, IWeapon
     private bool firing = false;
     private IProjectile projectile;
 
+    public int maxDurability;
+    private int durability;
+    private SpriteRenderer r;
+
     void Start()
     {
+        maxDurability = 100;
+        durability = maxDurability;
+        r = GetComponent<SpriteRenderer>();
+    }
+    public void degrade()
+    {
+        durability--;
+        if (durability <= maxDurability / 4)
+            r.color = Color.red;
+        if (durability < 1)
+            Destroy(gameObject);
     }
     public void fire()
     {
@@ -31,6 +46,7 @@ public class ShotgunController : MonoBehaviour, IWeapon
         if (firing && timeSinceLastSpawned > spawnRate)
         {
             fireShots();
+            degrade();
         }
     }
 

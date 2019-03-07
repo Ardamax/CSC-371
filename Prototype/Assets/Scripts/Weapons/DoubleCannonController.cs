@@ -15,10 +15,25 @@ public class DoubleCannonController : MonoBehaviour, IWeapon
     private float yOffset = 0.5f;
     private bool firing = false;
 
+    public int maxDurability;
+    private int durability;
+    private SpriteRenderer r;
+
     string target;
     // Start is called before the first frame update
     void Start()
     {
+        maxDurability = 50;
+        durability = maxDurability;
+        r = GetComponent<SpriteRenderer>();
+    }
+    public void degrade()
+    {
+        durability--;
+        if (durability <= maxDurability / 4)
+            r.color = Color.red;
+        if (durability < 1)
+            Destroy(gameObject);
     }
     public void fire()
     {
@@ -51,6 +66,7 @@ public class DoubleCannonController : MonoBehaviour, IWeapon
                 projectile.setTarget("Enemy");
             else
                 projectile.setTarget("Player");
+            degrade();
         }
     }
     public string toString()

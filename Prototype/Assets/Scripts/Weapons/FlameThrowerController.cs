@@ -8,10 +8,24 @@ public class FlameThrowerController : MonoBehaviour, IWeapon
     private GameObject flame;
 
     private bool firing = false;
-    void Start() {
-        
-    }
 
+    public int maxDurability;
+    private int durability;
+    private SpriteRenderer r;
+
+    void Start() {
+        maxDurability = 100;
+        durability = maxDurability;
+        r = GetComponent<SpriteRenderer>();
+    }
+    public void degrade()
+    {
+        durability--;
+        if (durability <= maxDurability / 4)
+            r.color = Color.red;
+        if (durability < 1)
+            Destroy(gameObject);
+    }
     public void fire() {
         if (!firing) {
             flame = Instantiate(flamePrefab, gameObject.transform.position, transform.root.rotation);
@@ -24,6 +38,7 @@ public class FlameThrowerController : MonoBehaviour, IWeapon
                     fController.setTarget("Player");
                 }
             firing = true;
+            degrade();//this line should be in the update function, but there seems to be none
         }
     }
 
