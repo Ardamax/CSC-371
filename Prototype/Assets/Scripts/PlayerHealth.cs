@@ -67,6 +67,7 @@ public class PlayerHealth : MonoBehaviour
         {
             if (sceneName == "Level1")
             {
+                sceneName == "NotLevel1";
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
             else SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
