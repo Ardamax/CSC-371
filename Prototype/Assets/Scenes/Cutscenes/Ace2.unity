@@ -593,7 +593,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: fc7d59cac541003479e4d5e2f514b15b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 546752a4913ad4f0396375922fdea1b5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -991,9 +991,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: You are a Mighty Engineer. You have grown up with your best friend Percy
-    you have always had each other's backs. Having freshly graduated from the academy
-    you and your best friend...Your brother will get to take to the skies. Together.
+  m_Text: 'Ace: this yoused to be such a nice forest. Are you happy with what you
+    have done
+
+    You: Ive only done what is just! where are the other aces. Where is the HunterAce!'
 --- !u!222 &756032452
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1037,7 +1038,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1290.7, y: 215.5}
+  m_SizeDelta: {x: 1290.7, y: 260.8}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &759321994
 MonoBehaviour:
@@ -1072,9 +1073,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'You and Percy are on an armed training flight when you get the news. THE
-    EMPIRE HAS INVADED. All hands to Battlestations. You and Percy are going to take
-    on the Empire. '
+  m_Text: 'Hes in what you would call the Badlands, I do not pity you Vernian. I regret
+    nothing.
+
+    You: You dont need to
+
+    Narrator: Off you fly to the badlands of the East. Farther from home than you
+    ever have been'
 --- !u!222 &759321995
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1257,8 +1262,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1290.7, y: 215.5}
+  m_AnchoredPosition: {x: -56.6, y: 0}
+  m_SizeDelta: {x: 1403.9, y: 255.1}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &942359907
 MonoBehaviour:
@@ -1293,10 +1298,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Welcome to the World of Arret, a land wrought with turmoil. A place where
-    sea monsters and Airships coincide. The major countries of the mainland have come
-    together to form the Empire. The island people of Vernia have taken notice and
-    are on high alert. '
+  m_Text: 'You: I have you now, you and your lackys can not stand up to the power
+    of Vernia
+
+    Ace: We will never give up
+
+    You: Give up, no you will die'
 --- !u!222 &942359908
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1363,7 +1370,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 19b3d47f8ee529b44b07d72e92d9fd62, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a3e191f89e8bc44ac924a68c6cc6a0b4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1847,7 +1854,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: b93be1969c7ab364ba538d0312a6554b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2301b4e0d19a440bcae4ae3e811da67e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
