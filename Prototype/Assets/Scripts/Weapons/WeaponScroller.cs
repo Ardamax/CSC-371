@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WeaponScroller : MonoBehaviour
 {
-    public float speed;
+    public float speed = 1f;
     public WingCode weapon;
     private Vector3 movement = new Vector3(0, -1, 0);
 

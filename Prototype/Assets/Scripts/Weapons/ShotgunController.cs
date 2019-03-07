@@ -53,6 +53,6 @@ public class ShotgunController : MonoBehaviour, IWeapon
 
     public string toString()
     {
-        return "Cannon";
+        return "Shotgun";
     }
 }
