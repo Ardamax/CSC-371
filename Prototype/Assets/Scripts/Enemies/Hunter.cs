@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Timers;
 
 public class Hunter : MonoBehaviour, IEnemy
 {
@@ -13,6 +14,8 @@ public class Hunter : MonoBehaviour, IEnemy
     private float timeSinceHit = 0f;
     private float timeSinceLastAttack = 0f;
     private float damageTime = 0.3f;
+    public float deathDelay = 5.0f;
+    private bool isdead = false;
 
 
     private IWeapon leftWeapon;
@@ -29,6 +32,9 @@ public class Hunter : MonoBehaviour, IEnemy
     private int direction = 1;
     private Vector2 target;
     private Vector2 position;
+    
+
+
     void Start()
     {
         player = GameObject.Find("Player");
@@ -86,6 +92,8 @@ public class Hunter : MonoBehaviour, IEnemy
         Instantiate(drop, new Vector2(gameObject.transform.position.x,
    gameObject.transform.position.y), Quaternion.identity);
         Destroy(gameObject);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
 
     }
 

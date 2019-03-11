@@ -18,8 +18,6 @@ public class PlayerHealth : MonoBehaviour
 
     void Awake ()
 	{
-        sceneName = SceneManager.GetActiveScene().name;
-        Debug.Log("the scene " + sceneName);
         healthBar = GameObject.Find("HealthBar").GetComponent<SpriteRenderer>();
 
 		// Getting the intial scale of the healthbar (whilst the player has full health).
@@ -28,7 +26,8 @@ public class PlayerHealth : MonoBehaviour
 
 	void Start() {
 		resetHealth();
-	}
+        sceneName = SceneManager.GetActiveScene().name;
+    }
 
 	public void resetHealth() {
 		health = initialHealth;

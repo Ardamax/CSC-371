@@ -514,7 +514,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6c7c3cdda4c0f34199133e68f16e809, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialHealth: 100
+  initialHealth: 50
   repeatDamagePeriod: 2
   hurtForce: 10
   damageAmount: 10
