@@ -35,6 +35,17 @@ public class PlayerHealth : MonoBehaviour
 		UpdateHealthBar();
 	}
 
+	public void heal(float healingAmount) {
+		float newHealth = health + healingAmount;
+		if (newHealth > initialHealth) {
+			newHealth = initialHealth;
+		}
+
+		health = newHealth;
+		UpdateHealthBar();
+		print("Healing: " + health);
+	}
+
     void OnCollisionEnter2D (Collision2D col)
 	{
 		// If the colliding gameobject is an Enemy
