@@ -33,9 +33,9 @@ public class Hunter : MonoBehaviour, IEnemy
     {
         player = GameObject.Find("Player");
         r = gameObject.transform.Find("Body").GetComponent<SpriteRenderer>();
-        leftWeapon = gameObject.transform.Find("Left Wing").gameObject.GetComponentInChildren<IWeapon>();
-        rightWeapon = gameObject.transform.Find("Right Wing").gameObject.GetComponentInChildren<IWeapon>();
-        drop = gameObject.transform.Find("Left Wing").GetChild(0).gameObject;
+        leftWeapon = gameObject.transform.Find("Hunter Left Wing").gameObject.GetComponentInChildren<IWeapon>();
+        rightWeapon = gameObject.transform.Find("Hunter Right Wing").gameObject.GetComponentInChildren<IWeapon>();
+        drop = gameObject.transform.Find("Hunter Left Wing").GetChild(0).gameObject;
         sceneName = SceneManager.GetActiveScene().name;
     }
 
