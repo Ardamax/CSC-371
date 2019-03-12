@@ -58,7 +58,7 @@ public class ShotgunController : MonoBehaviour, IWeapon
         for (int i = 0; i < shotsPerFire; i++) {
             float angle = (spreadDegrees / 2f) - (i * (spreadDegrees / (shotsPerFire - 1)));
 
-            obj = Instantiate(shotPrefab, gameObject.transform.position, transform.root.rotation * Quaternion.Euler(0, 0, angle));
+            obj = Instantiate(shotPrefab, gameObject.transform.position, transform.rotation * Quaternion.Euler(0, 0, angle));
             projectile = obj.GetComponent<IProjectile>();
             if (gameObject.transform.root.CompareTag("Player"))
                 projectile.setTarget("Enemy");

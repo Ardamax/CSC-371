@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 1009120586143456679}
   m_Layer: 0
   m_Name: Shotgun
-  m_TagString: Untagged
+  m_TagString: Weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -166,3 +166,4 @@ MonoBehaviour:
   shotsPerFire: 6
   shotPrefab: {fileID: 7462460035054612207, guid: 6ade73c052188f04abf0586ba5bc89bc,
     type: 3}
+  maxDurability: 0
