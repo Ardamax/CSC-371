@@ -5,29 +5,22 @@ using UnityEngine;
 // Spencer
 public class InitializeEnemy : MonoBehaviour
 {
-    public float minX = -7f;
-    public float maxX = 7f;
-    public float initialY = 6.5f;
-    public float targetY = 3.5f;
-    public float moveSpeed = 1f;
+    public float targetY = 7.5f;
+    public float moveSpeed = 2f;
+    private Vector2 target;
 
-    void Start()
-    {
-        float initialX = Random.Range(minX, maxX);
-        Vector2 initialPos = new Vector2(initialX, initialY);
-        gameObject.transform.position = initialPos;
+    void Start() {
+        target = new Vector2(transform.position.x, targetY);
     }
 
     void Update()
     {
-        Vector2 oldPos = gameObject.transform.position;
-        Vector2 newPos = new Vector2 (oldPos.x, oldPos.y - (moveSpeed * Time.deltaTime));
-        if (newPos.y <= targetY) {
-            newPos.y = 3.5f;
-            gameObject.transform.position = newPos;
+        transform.position = Vector3.MoveTowards(transform.position, target, moveSpeed * Time.deltaTime);
+
+        if (Vector3.Distance(transform.position, target) < 0.01f) {
+            print("Attacking!");
             SendMessage("startAttacking");
             this.enabled = false;
         }
-        gameObject.transform.position = newPos;
     }
 }

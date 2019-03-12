@@ -32,10 +32,10 @@ public class FlameController : MonoBehaviour
     }
 
     void OnTriggerStay2D(Collider2D other) {
-        if (timeSinceLastTick >= secondsPerTick && other.gameObject.transform.root.CompareTag(target)) {
+        if (timeSinceLastTick >= secondsPerTick && other.gameObject.CompareTag(target)) {
             print("Attacking");
             timeSinceLastTick = 0f;
-            other.gameObject.transform.root.SendMessage("OnDamage", damagePerTick, SendMessageOptions.RequireReceiver);
+            other.gameObject.transform.SendMessageUpwards("OnDamage", damagePerTick, SendMessageOptions.RequireReceiver);
         }
     }
 }

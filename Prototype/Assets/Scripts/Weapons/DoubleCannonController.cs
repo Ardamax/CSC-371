@@ -52,7 +52,7 @@ public class DoubleCannonController : MonoBehaviour, IWeapon
         {
             timeSinceLastSpawned = 0f;
             GameObject leftCannonBall = (GameObject)Instantiate(cannonBallPrefab, new Vector2(gameObject.transform.position.x + xOffset,
-               gameObject.transform.position.y), transform.root.rotation);
+               gameObject.transform.position.y), transform.rotation);
             projectile = leftCannonBall.GetComponent<IProjectile>();
             if (gameObject.transform.root.CompareTag("Player"))
                 projectile.setTarget("Enemy");
@@ -60,7 +60,7 @@ public class DoubleCannonController : MonoBehaviour, IWeapon
                 projectile.setTarget("Player");
 
             GameObject rightCannonBall = Instantiate(cannonBallPrefab, new Vector2(gameObject.transform.position.x - xOffset,
-               gameObject.transform.position.y), transform.root.rotation);
+               gameObject.transform.position.y), transform.rotation);
             projectile = rightCannonBall.GetComponent<IProjectile>();
             if (gameObject.transform.root.CompareTag("Player"))
                 projectile.setTarget("Enemy");

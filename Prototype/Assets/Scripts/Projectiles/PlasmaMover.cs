@@ -46,7 +46,7 @@ public class PlasmaMover : MonoBehaviour, IProjectile
     {
         if (other.gameObject.CompareTag(target))
         {
-            other.gameObject.transform.root.SendMessage("OnDamage", damage, SendMessageOptions.RequireReceiver);
+            other.gameObject.transform.SendMessageUpwards("OnDamage", damage, SendMessageOptions.RequireReceiver);
             Destroy(gameObject);
         }
     }

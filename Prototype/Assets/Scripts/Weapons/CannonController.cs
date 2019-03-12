@@ -45,7 +45,7 @@ public class CannonController : MonoBehaviour, IWeapon
         {
             timeSinceLastSpawned = 0f;
             GameObject cannonBall = (GameObject)Instantiate(cannonBallPrefab, new Vector2(gameObject.transform.position.x,
-   gameObject.transform.position.y), transform.root.rotation);
+   gameObject.transform.position.y), transform.rotation);
             projectile = cannonBall.GetComponent<IProjectile>();
             if (gameObject.transform.root.CompareTag("Player"))
                 projectile.setTarget("Enemy");
