@@ -106,6 +106,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8101168557988911696}
   - component: {fileID: 1871366890648791997}
+  - component: {fileID: 376891404351237541}
   m_Layer: 0
   m_Name: Hunter
   m_TagString: Enemy
@@ -144,9 +145,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAttacking: 1
   health: 100
+  deathDelay: 5
   fireDelay: 100
   drop: {fileID: 0}
   speed: 1.5
+--- !u!50 &376891404351237541
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2819624261714508437}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &3492318604179735936
 GameObject:
   m_ObjectHideFlags: 0

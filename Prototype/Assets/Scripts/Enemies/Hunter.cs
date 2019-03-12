@@ -80,6 +80,8 @@ public class Hunter : MonoBehaviour, IEnemy
         health = health - damage;
         r.color = Color.red;
         timeSinceHit = 0f;
+        
+        print("I'm taking damage!");
 
         if (health <= 0)
         {
