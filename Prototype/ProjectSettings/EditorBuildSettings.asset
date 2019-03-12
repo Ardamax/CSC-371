@@ -30,17 +30,20 @@ EditorBuildSettings:
     path: Assets/Scenes/Combat levels/Ace2(Level3).unity
     guid: 06bb7645c944ead4b81b51435bd86696
   - enabled: 1
-    path: Assets/Scenes/Cutscenes/Ace2.unity
+    path: Assets/Scenes/Cutscenes/Ace2(Walker).unity
     guid: 4baa410067e8a42068f80877192e5fdc
   - enabled: 1
     path: Assets/Scenes/Combat levels/Ace3(Level4).unity
     guid: 5a265acaa1891e443b33756072296e1a
   - enabled: 1
-    path: Assets/Scenes/Cutscenes/Ace3.unity
+    path: Assets/Scenes/Cutscenes/Ace3(HunterAce).unity
     guid: b0028e5b531824b6cbc5330005e1e526
   - enabled: 1
     path: Assets/Scenes/Combat levels/Ace4(Level5).unity
     guid: 0201deb816f22924e8a476969996f9d5
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/Ace4(wanderer).unity
+    guid: 41bd5772b4597466c9061236e1ce2abc
   - enabled: 1
     path: Assets/Scenes/Combat levels/ArriveAtEmpire(MainAce Level 6).unity
     guid: 888fd0fc765607c46908cae36654aa9c
