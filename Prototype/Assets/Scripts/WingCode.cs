@@ -62,6 +62,7 @@ public class WingCode : MonoBehaviour
         {
             //Debug.Log("Out of range!");
             snappable = false;
+            savedCol = null;
         }
 
 
@@ -72,16 +73,17 @@ public class WingCode : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             /* wing is disconnected but in range of ship; attach right*/
-            if ((gameObject.transform.parent == null) && (snappable == true) && (savedCol != null) && (savedCol.gameObject.name == "Right Wing"))
+            //   no parent                                 is snappable       collider still in range     at right wing                                  no other weapons attached
+            if ((gameObject.transform.parent == null) && (snappable == true) && (savedCol != null) && (savedCol.gameObject.name == "Right Wing") && (savedCol.gameObject.transform.childCount == 1))
             {
                 transform.parent = savedCol.transform;
                 transform.position = Vector2.zero;
-                transform.localPosition = new Vector2(0, 0);//(x +0.9f, y - 0.3f);
+                transform.localPosition = new Vector2(0, 0);
                 snappable = false;
                 isSnapped = true;
 
             }
-            /* wing is connected to right wing; disconnect*/
+            /* weapon is connected to right wing; disconnect*/
             else if ((gameObject.transform.parent) && (transform.parent.gameObject.name == "Right Wing") && (snappable == false))
             {
                 transform.parent = null;
@@ -99,14 +101,14 @@ public class WingCode : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.Q))
         {
             /* wing is disconnected but in range of ship; attach right*/
-            if ((gameObject.transform.parent == null) && (snappable == true) && (savedCol != null) && (savedCol.gameObject.name == "Left Wing"))
+            if ((gameObject.transform.parent == null) && (snappable == true) && (savedCol != null) && (savedCol.gameObject.name == "Left Wing") && (savedCol.gameObject.transform.childCount == 1))
             {
                 //Debug.Log("Connecting\n");
                 transform.parent = savedCol.transform;
                // Debug.Log("parent check\n");
 
                 transform.position = Vector2.zero;
-                transform.localPosition = new Vector2(0, 0);//(x-1.45f, y -0.1f);
+                transform.localPosition = new Vector2(0, 0);
                 //Debug.Log("location check\n");
 
                 snappable = false;
