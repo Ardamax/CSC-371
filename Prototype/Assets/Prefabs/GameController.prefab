@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1949882734120579208}
   - component: {fileID: 1721982076474179244}
   - component: {fileID: 123979756195840569}
+  - component: {fileID: 3035024443674324961}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -58,3 +59,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0df27fec89ef494db2e4b6da8306ead, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3035024443674324961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1949882734120579211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ba5b36d810931244915257863ea2bf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  basicCannonPrefab: {fileID: 1287915556241913966, guid: 155faf168f875df4d99cdceab24d7dc1,
+    type: 3}

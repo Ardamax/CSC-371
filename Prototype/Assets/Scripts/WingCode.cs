@@ -87,6 +87,10 @@ public class WingCode : MonoBehaviour
                 transform.parent = null;
                 snappable = true;
                 isSnapped = false;
+
+                if (gameObject.name == "Cannon") {
+                    Destroy(gameObject);
+                }
             }
 
         }
@@ -117,6 +121,10 @@ public class WingCode : MonoBehaviour
                 transform.parent = null;
                 snappable = true;
                 isSnapped = false;
+
+                if (gameObject.name == "Cannon") {
+                    Destroy(gameObject);
+                }
             }
         }
     }
