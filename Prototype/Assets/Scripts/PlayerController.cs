@@ -30,12 +30,32 @@ public class PlayerController : MonoBehaviour
     }
     void FixedUpdate()
     {
-        float horizontalMovement = Input.GetAxis("Horizontal");
-        float verticalMovement = Input.GetAxis("Vertical");
+
+        float horizontalMovement = 0;
+        float verticalMovement = 0;
+
+        if (Input.GetKey("d"))
+        {
+            horizontalMovement = 1;
+        }
+        else if (Input.GetKey("a"))
+        {
+            horizontalMovement = -1;
+        }
+ 
+        if (Input.GetKey("w"))
+        {
+            verticalMovement = 1;
+        }
+        else if (Input.GetKey("s"))
+        {
+            verticalMovement = -1;
+        }
 
         Vector2 movement = new Vector2(horizontalMovement, verticalMovement) * speed;
+        transform.Translate(movement * Time.deltaTime);
 
-        rb2d.velocity = movement;
+        //rb2d.velocity = movement;
 
     }
 }

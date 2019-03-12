@@ -70,7 +70,7 @@ public class WingCode : MonoBehaviour
     private void Update()
     {
         /*right wing stuff*/
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.Semicolon))
         {
             /* wing is disconnected but in range of ship; attach right*/
             //   no parent                                 is snappable       collider still in range     at right wing                                  no other weapons attached
@@ -98,7 +98,7 @@ public class WingCode : MonoBehaviour
         }
 
         /*left wing stuff*/
-        else if (Input.GetKeyDown(KeyCode.Q))
+        else if (Input.GetKeyDown(KeyCode.L))
         {
             /* wing is disconnected but in range of ship; attach right*/
             if ((gameObject.transform.parent == null) && (snappable == true) && (savedCol != null) && (savedCol.gameObject.name == "Left Wing") && (savedCol.gameObject.transform.childCount == 1))
