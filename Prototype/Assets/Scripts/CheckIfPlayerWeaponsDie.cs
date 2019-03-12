@@ -9,16 +9,14 @@ public class CheckIfPlayerWeaponsDie : MonoBehaviour
     private GameObject rightWing;
     public GameObject basicCannonPrefab;
 
-    void Start() {
+    void Update() {
         player = GameObject.Find("Player");
         leftWing = player.transform.Find("Left Wing").gameObject;
         rightWing = player.transform.Find("Right Wing").gameObject;
-    }
-
-    void Update() {
         // Check left wing
         if (leftWing.GetComponentInChildren<WingCode>() == null) {
             GameObject weapon = Instantiate(basicCannonPrefab);
+            weapon.name = "Cannon";
             WingCode weaponWing = weapon.GetComponent<WingCode>();
             weaponWing.transform.parent = leftWing.transform;
             weaponWing.transform.position = Vector2.zero;
@@ -30,6 +28,7 @@ public class CheckIfPlayerWeaponsDie : MonoBehaviour
         // Check right wing
         if (rightWing.GetComponentInChildren<WingCode>() == null) {
             GameObject weapon = Instantiate(basicCannonPrefab);
+            weapon.name = "Cannon";
             WingCode weaponWing = weapon.GetComponent<WingCode>();
             weaponWing.transform.parent = rightWing.transform;
             weaponWing.transform.position = Vector2.zero;
