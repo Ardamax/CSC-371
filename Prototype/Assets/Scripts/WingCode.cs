@@ -90,6 +90,11 @@ public class WingCode : MonoBehaviour
                 snappable = true;
                 isSnapped = false;
 
+                IWeapon weapon = gameObject.GetComponent<IWeapon>(); 
+                if (weapon != null) {
+                    weapon.stopFiring();
+                }
+
                 if (gameObject.name == "Cannon") {
                     Destroy(gameObject);
                 }
@@ -123,6 +128,12 @@ public class WingCode : MonoBehaviour
                 transform.parent = null;
                 snappable = true;
                 isSnapped = false;
+
+                IWeapon weapon = gameObject.GetComponent<IWeapon>(); 
+                if (weapon != null) {
+                    weapon.stopFiring();
+                }
+
 
                 if (gameObject.name == "Cannon") {
                     Destroy(gameObject);

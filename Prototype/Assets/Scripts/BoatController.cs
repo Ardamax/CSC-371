@@ -17,6 +17,10 @@ public class BoatController : MonoBehaviour
         r = GetComponent<SpriteRenderer>();
     }
 
+    void startAttacking() {
+        this.isAttacking = true;
+    }
+
     void OnDamage(int damage) {
         health = health - damage;
         r.color = Color.red;
@@ -39,9 +43,5 @@ public class BoatController : MonoBehaviour
             timeSinceLastAttack = 0f;
             Instantiate(fireBallPrefab, transform.position, Quaternion.identity);
         }
-    }
-
-    void Attacking() {
-        isAttacking = true;
     }
 }
