@@ -36,20 +36,37 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKey("d"))
         {
-            horizontalMovement = 1;
+            if (transform.position.x <= 8.5)
+            {
+                horizontalMovement = 1;
+
+            }
         }
         else if (Input.GetKey("a"))
         {
-            horizontalMovement = -1;
+            if (transform.position.x >= -8.5)
+            {
+                horizontalMovement = -1;
+
+            }
+
         }
  
         if (Input.GetKey("w"))
         {
-            verticalMovement = 1;
+            if (transform.position.y <= 4)
+            {
+                verticalMovement = 1;
+
+            }
         }
         else if (Input.GetKey("s"))
         {
-            verticalMovement = -1;
+            if (transform.position.y >= -4)
+            {
+                verticalMovement = -1;
+
+            }
         }
 
         Vector2 movement = new Vector2(horizontalMovement, verticalMovement) * speed;
