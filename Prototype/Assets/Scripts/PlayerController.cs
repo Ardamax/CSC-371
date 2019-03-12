@@ -10,6 +10,7 @@ public class Boundary
 
 public class PlayerController : MonoBehaviour
 {
+    public float xbounds, ybounds;
     public float speed;
     public Boundary boundary;
     public Transform shotSpawn; // can add multiple
@@ -36,7 +37,7 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKey("d"))
         {
-            if (transform.position.x <= 8.5)
+            if (transform.position.x <= xbounds)
             {
                 horizontalMovement = 1;
 
@@ -44,7 +45,7 @@ public class PlayerController : MonoBehaviour
         }
         else if (Input.GetKey("a"))
         {
-            if (transform.position.x >= -8.5)
+            if (transform.position.x >= -1 * xbounds)
             {
                 horizontalMovement = -1;
 
@@ -54,7 +55,7 @@ public class PlayerController : MonoBehaviour
  
         if (Input.GetKey("w"))
         {
-            if (transform.position.y <= 4)
+            if (transform.position.y <= ybounds)
             {
                 verticalMovement = 1;
 
@@ -62,7 +63,7 @@ public class PlayerController : MonoBehaviour
         }
         else if (Input.GetKey("s"))
         {
-            if (transform.position.y >= -4)
+            if (transform.position.y >= -1* ybounds)
             {
                 verticalMovement = -1;
 

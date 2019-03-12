@@ -12142,9 +12142,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ec8971b89b5bad4abd710c3e3fe75ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waveOnePrefabs: []
-  timeUntilFirstWave: 5
-  waveOneApproachRate: 1.5
 --- !u!4 &1193493196
 Transform:
   m_ObjectHideFlags: 0
@@ -13131,6 +13128,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3390626607456730905, guid: 4cd21a3305b7a404196ea18ed87639b0,
+        type: 3}
+      propertyPath: xbounds
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 3390626607456730905, guid: 4cd21a3305b7a404196ea18ed87639b0,
+        type: 3}
+      propertyPath: ybounds
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4cd21a3305b7a404196ea18ed87639b0, type: 3}
