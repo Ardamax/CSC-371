@@ -41,20 +41,22 @@ public class Legionnaire : MonoBehaviour, IEnemy
 
     public void OnDamage(int damage)
     {
-        health = health - damage;
-        r.color = Color.black;
-        timeSinceHit = 0f;
+        if (isAttacking) {
+            health = health - damage;
+            r.color = Color.black;
+            timeSinceHit = 0f;
 
-        //deploy shield if it hasn't been deployed yet
-        if (weapon != null)
-        {
-            deploy = true;
-            drop.GetComponent<WingCode>().isSnapped = false;
-        }
+            //deploy shield if it hasn't been deployed yet
+            if (weapon != null)
+            {
+                deploy = true;
+                drop.GetComponent<WingCode>().isSnapped = false;
+            }
 
-        if (health <= 0)
-        {
-            die();
+            if (health <= 0)
+            {
+                die();
+            }
         }
     }
     public void die() { Destroy(gameObject); }
@@ -85,9 +87,9 @@ public class Legionnaire : MonoBehaviour, IEnemy
                 break;
             case 2:
                 GameObject shield = GameObject.Find("DeployableShieldShooter");
-                shield.transform.rotation = Quaternion.identity;
-                shield.transform.localScale = new Vector3(0.75f, 0.75f, 0.75f);
-                shield.transform.parent = null;
+                drop.transform.rotation = Quaternion.identity;
+                drop.transform.localScale = new Vector3(0.75f, 0.75f, 0.75f);
+                drop.transform.parent = null;
                 break;
             case 3:
                 weapon.stopFiring();

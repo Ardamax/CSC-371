@@ -6,9 +6,13 @@ public class ResetPlayerHealthOnNewScene : MonoBehaviour
 {
     void Start()
     {
-        PlayerHealth playerHealth = GameObject.Find("Player").GetComponent<PlayerHealth>();
-        if (playerHealth != null) {
-            playerHealth.resetHealth();
+        GameObject player = GameObject.Find("Player");
+        if (player != null) {
+            PlayerHealth playerHealth = GameObject.Find("Player").GetComponent<PlayerHealth>();
+            if (playerHealth != null) {
+                playerHealth.resetHealth();
+            }
         }
+        
     }
 }
