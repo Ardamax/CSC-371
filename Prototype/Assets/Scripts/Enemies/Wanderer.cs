@@ -40,7 +40,6 @@ public class Wanderer : MonoBehaviour, IEnemy
         player = GameObject.Find("Player");
         p = player.GetComponentInChildren<PlayerController>();
         xbounds = p.xbounds - 2;
-        Debug.Log(xbounds);
         r = gameObject.transform.Find("Body").GetComponent<SpriteRenderer>();
         weapon = gameObject.transform.Find("Body").GetComponentInChildren<IWeapon>();
         weaponPrefab = gameObject.transform.GetChild(0).GetChild(0).gameObject;

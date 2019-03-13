@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Spinner : MonoBehaviour, IEnemy
+public class Emporer : MonoBehaviour, IEnemy
 {
     public bool isAttacking = false;
     public int health = 100;
@@ -27,7 +27,7 @@ public class Spinner : MonoBehaviour, IEnemy
     void Start()
     {
         player = GameObject.Find("Player");
-        r = gameObject.transform.Find("Body").GetComponent<SpriteRenderer>();
+        r = gameObject.transform.Find("MainBody").GetComponent<SpriteRenderer>();
     }
 
     public void startAttacking()
@@ -72,7 +72,7 @@ public class Spinner : MonoBehaviour, IEnemy
 
     public void fire()
     {
-        Transform body = transform.Find("Body");
+        Transform body = transform.Find("MainBody");
         if (fireCooldown <= 0)
         {
             foreach (Transform child in body.transform)
@@ -94,7 +94,6 @@ public class Spinner : MonoBehaviour, IEnemy
     }
     public void move()
     {
-        transform.Rotate(0, 0, speed * Time.deltaTime);
     }
 }
 

@@ -293,6 +293,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shotgun
       objectReference: {fileID: 0}
+    - target: {fileID: 8001635198030200321, guid: 69d0092af931d4c4da46453c2736ca3b,
+        type: 3}
+      propertyPath: isSnapped
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1009120586143456679, guid: 69d0092af931d4c4da46453c2736ca3b,
         type: 3}
       propertyPath: spreadDegrees
@@ -387,6 +392,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Shotgun
+      objectReference: {fileID: 0}
+    - target: {fileID: 8001635198030200321, guid: 69d0092af931d4c4da46453c2736ca3b,
+        type: 3}
+      propertyPath: isSnapped
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1009120586143456679, guid: 69d0092af931d4c4da46453c2736ca3b,
         type: 3}
@@ -483,6 +493,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shotgun
       objectReference: {fileID: 0}
+    - target: {fileID: 8001635198030200321, guid: 69d0092af931d4c4da46453c2736ca3b,
+        type: 3}
+      propertyPath: isSnapped
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1009120586143456679, guid: 69d0092af931d4c4da46453c2736ca3b,
         type: 3}
       propertyPath: shotsPerFire
@@ -577,6 +592,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Shotgun
+      objectReference: {fileID: 0}
+    - target: {fileID: 8001635198030200321, guid: 69d0092af931d4c4da46453c2736ca3b,
+        type: 3}
+      propertyPath: isSnapped
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1009120586143456679, guid: 69d0092af931d4c4da46453c2736ca3b,
         type: 3}
@@ -673,6 +693,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shotgun
       objectReference: {fileID: 0}
+    - target: {fileID: 8001635198030200321, guid: 69d0092af931d4c4da46453c2736ca3b,
+        type: 3}
+      propertyPath: isSnapped
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1009120586143456679, guid: 69d0092af931d4c4da46453c2736ca3b,
         type: 3}
       propertyPath: spreadDegrees
@@ -767,6 +792,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Shotgun
+      objectReference: {fileID: 0}
+    - target: {fileID: 8001635198030200321, guid: 69d0092af931d4c4da46453c2736ca3b,
+        type: 3}
+      propertyPath: isSnapped
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1009120586143456679, guid: 69d0092af931d4c4da46453c2736ca3b,
         type: 3}
