@@ -12,7 +12,7 @@ public class Legionnaire : MonoBehaviour, IEnemy
     private float timeSinceLastAttack = 0f;
     private float damageTime = 0.3f;
 
-    private float speed = 2.0f;
+    public float speed = 2.0f;
     private Vector2 target;
     private Vector2 position;
 
@@ -118,9 +118,9 @@ public class Legionnaire : MonoBehaviour, IEnemy
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.transform.root.CompareTag("Player"))
+        if (other.transform.CompareTag("Player"))
         {
-            other.gameObject.transform.root.SendMessage("OnDamage", damage, SendMessageOptions.RequireReceiver);
+            other.gameObject.transform.SendMessageUpwards("OnDamage", damage, SendMessageOptions.RequireReceiver);
             Destroy(gameObject);
         }
     }

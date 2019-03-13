@@ -34,12 +34,16 @@ public class Pause : MonoBehaviour
     }
     public void ReturnToMainMenu()
     {
+        GameObject player = GameObject.Find("Player");
+        Destroy(player);
         Time.timeScale = 1;
         pausePanel.SetActive(false);
         SceneManager.LoadScene(0);
     }
     public void RestartLevel(){
-         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        GameObject player = GameObject.Find("Player");
+        Destroy(player);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
 }

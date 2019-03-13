@@ -48,7 +48,7 @@ public class DeployableShieldShooterController : MonoBehaviour, IWeapon
         if (firing && timeSinceLastSpawned > cooldownDuration) {
             timeSinceLastSpawned = 0f;
             GameObject deployableShield = (GameObject)Instantiate(deployableShieldPrefab, new Vector2(gameObject.transform.position.x,
-                gameObject.transform.position.y), transform.root.rotation);
+                gameObject.transform.position.y), transform.rotation);
         
             if (gameObject.transform.root.CompareTag("Player")) {
                 deployableShield.tag = "Player";
