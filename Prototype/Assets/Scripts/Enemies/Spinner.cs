@@ -78,10 +78,7 @@ public class Spinner : MonoBehaviour, IEnemy
             foreach (Transform child in body.transform)
             {
                 if (child.CompareTag("Weapon"))
-                {
-                    Debug.Log("hi");
                     child.SendMessage("fire");
-                }
             }
             fireCooldown = fireDelay;
         }
