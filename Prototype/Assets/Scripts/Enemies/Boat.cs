@@ -12,7 +12,7 @@ public class Boat : MonoBehaviour, IEnemy
     private float timeSinceLastAttack = 0f;
     private float damageTime = 0.3f;
 
-    private float speed = 2.0f;
+    public float speed = 2.0f;
     private Vector2 target;
     private Vector2 position;
 

@@ -10,7 +10,7 @@ public class FireballMover : MonoBehaviour
     {
         gameObject.transform.Translate(new Vector3(0f, -1f, 0f) * speed * Time.deltaTime);
 
-        if (transform.position.y < -5) {
+        if (transform.position.y < -15) {
             Destroy(gameObject);
         }
     }
