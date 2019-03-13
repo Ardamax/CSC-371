@@ -38,4 +38,8 @@ public class Pause : MonoBehaviour
         pausePanel.SetActive(false);
         SceneManager.LoadScene(0);
     }
+    public void RestartLevel(){
+         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
 }
