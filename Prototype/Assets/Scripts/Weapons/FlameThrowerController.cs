@@ -28,7 +28,7 @@ public class FlameThrowerController : MonoBehaviour, IWeapon
     }
     public void fire() {
         if (!firing) {
-            flame = Instantiate(flamePrefab, gameObject.transform.position, transform.root.rotation);
+            flame = Instantiate(flamePrefab, gameObject.transform.position, transform.rotation);
             FlameController fController = flame.GetComponent<FlameController>();
             fController.setParent(gameObject);
                 if (transform.root.CompareTag("Player")) {

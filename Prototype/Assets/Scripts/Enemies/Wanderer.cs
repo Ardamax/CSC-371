@@ -28,7 +28,7 @@ public class Wanderer : MonoBehaviour, IEnemy
     private GameObject player;
     public int moveAmount = 200;
     private int moveCount = 0;
-    public float speed = 6f;
+    public float speed;
     private int direction = 1;
     private Vector2 target;
     private Vector2 position;
