@@ -1206,10 +1206,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Ace: this yoused to be such a nice forest. Are you happy with what you
-    have done
+  m_Text: 'Ace: This used to be such a nice forest. Are you happy with what you have
+    done Vernian
 
-    You: Ive only done what is just! where are the other aces. Where is the HunterAce!'
+    You: I''ve only done what is just! where are the other aces. Where is the HunterAce!
+
+'
 --- !u!222 &756032452
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1301,13 +1303,15 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Hes in what you would call the Badlands, I do not pity you Vernian. I regret
-    nothing.
+  m_Text: 'He''s in what you would call the Badlands, I do not pity you Vernian. Your
+    quest will lead you down an ugly road
 
-    You: You dont need to
+    You: You don''t need to
 
     Narrator: Off you fly to the badlands of the East. Farther from home than you
-    ever have been'
+    ever have been
+
+'
 --- !u!222 &759321995
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1632,7 +1636,9 @@ MonoBehaviour:
 
     Ace: We will never give up
 
-    You: Give up, no you will die'
+    You: Give up, no you will die
+
+'
 --- !u!222 &942359908
 CanvasRenderer:
   m_ObjectHideFlags: 0

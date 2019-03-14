@@ -992,9 +992,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: You are a Mighty Engineer. You have grown up with your best friend Percy
-    you have always had each other's backs. Having freshly graduated from the academy
+  m_Text: 'You are a Mighty Engineer. You have grown up with your best friend Percy
+    you have always had each other''s backs. Having freshly graduated from the academy
     you and your best friend...Your brother will get to take to the skies. Together.
+
+'
 --- !u!222 &756032452
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1086,9 +1088,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'You and Percy are on an armed training flight when you get the news. THE
+  m_Text: "You and Percy are on an armed training flight when you get the news. THE
     EMPIRE HAS INVADED. All hands to Battlestations. You and Percy are going to take
-    on the Empire. '
+    on the Empire. \n"
 --- !u!222 &759321995
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1408,10 +1410,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Welcome to the World of Arret, a land wrought with turmoil. A place where
+  m_Text: "Welcome to the World of Arret, a land wrought with turmoil. A place where
     sea monsters and Airships coincide. The major countries of the mainland have come
     together to form the Empire. The island people of Vernia have taken notice and
-    are on high alert. '
+    are on high alert. \n"
 --- !u!222 &942359908
 CanvasRenderer:
   m_ObjectHideFlags: 0

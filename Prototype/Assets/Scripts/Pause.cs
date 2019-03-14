@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Pause : MonoBehaviour
 {
-    [SerializeField] private GameObject pausePanel;
+    public GameObject pausePanel;
     void Start()
     {
         pausePanel.SetActive(false);
@@ -43,6 +43,7 @@ public class Pause : MonoBehaviour
     public void RestartLevel(){
         GameObject player = GameObject.Find("Player");
         Destroy(player);
+        Time.timeScale = 1; 
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 

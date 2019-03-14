@@ -1080,14 +1080,16 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Ace: What am i to hunt with what you vernians have done, This used to be
+  m_Text: 'Ace: What am I to hunt with what you vernians have done, This used to be
     the best Jungle this side of Arret.
 
-    You: You had no problem hunting percy. Now where is your fellow aces
+    You: You had no problem hunting percy! Where is your fellow aces
 
     Ace: I only know where the wanderer is, but why should I tell you
 
-    You: Oh ill give you a reason.'
+    You: Oh i''ll give you a reason.
+
+'
 --- !u!222 &756032452
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1516,7 +1518,7 @@ MonoBehaviour:
 
     Ace: Just like a vernian no morals
 
-    You :Thats Rich coming from you'
+    You : That''s Rich coming from you'
 --- !u!222 &959534323
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -1224,12 +1224,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Wanderer: Now you know Vernian why we cant just stand by.
+  m_Text: 'Wanderer: Now you know Vernian why we can''t just stand by.
 
-    You: The lakes they are freezeing, who could do such a thing?
+    You: The lakes they are freezing, who could do such a thing?
 
     Wanderer: You know in your heart who is doing this Vernian. Go to Fluson in the
-    Empire. There the floating city will have your anwsers.'
+    Empire. There the floating city will have your answers.'
 --- !u!222 &759321995
 CanvasRenderer:
   m_ObjectHideFlags: 0
