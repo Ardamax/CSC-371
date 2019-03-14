@@ -120,7 +120,7 @@ public class Legionnaire : MonoBehaviour, IEnemy
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.transform.CompareTag("Player"))
+        if (other.transform.root.CompareTag("Player"))
         {
             other.gameObject.transform.SendMessageUpwards("OnDamage", damage, SendMessageOptions.RequireReceiver);
             Destroy(gameObject);

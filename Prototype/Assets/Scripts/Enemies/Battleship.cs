@@ -47,14 +47,16 @@ public class Battleship : MonoBehaviour, IEnemy
 
     public void OnDamage(int damage)
     {
-        health = health - damage;
-        r.color = Color.red;
-        timeSinceHit = 0f;
+        if (isAttacking) {
+            health = health - damage;
+            r.color = Color.red;
+            timeSinceHit = 0f;
 
-        if (health <= 0)
-        {
-            die();
-        }
+            if (health <= 0)
+            {
+                die();
+            }
+        }        
     }
     public void die()
     {

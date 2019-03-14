@@ -177,11 +177,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5acd75d20bd191d42b505754bdfe7b77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minX: -7
-  maxX: 7
-  initialY: 6.5
-  targetY: 3.5
-  moveSpeed: 1
+  targetY: 5.5
+  moveSpeed: 2
 --- !u!50 &8350363057738198201
 Rigidbody2D:
   serializedVersion: 4
