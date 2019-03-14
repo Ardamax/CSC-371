@@ -26,7 +26,7 @@ public class Pause : MonoBehaviour
         Time.timeScale = 0;
         pausePanel.SetActive(true);
     }
-    private void ContinueGame()
+    public void ContinueGame()
     {
         Time.timeScale = 1;
         pausePanel.SetActive(false);
