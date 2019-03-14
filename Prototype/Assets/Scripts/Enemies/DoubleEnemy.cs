@@ -68,6 +68,12 @@ public class DoubleEnemy : MonoBehaviour, IEnemy
         leftSpawn.GetComponent<SplitEnemy>().setTargetOffsetX(1f);
         rightSpawn.GetComponent<SplitEnemy>().setTargetOffsetX(-1f);
 
+        leftSpawn.GetComponent<SplitEnemy>().isAttacking = true;
+        rightSpawn.GetComponent<SplitEnemy>().isAttacking = true;
+
+        leftSpawn.GetComponent<InitializeEnemy>().enabled = false;
+        rightSpawn.GetComponent<InitializeEnemy>().enabled = false;
+
         Destroy(gameObject);
     }
 
