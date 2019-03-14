@@ -18,42 +18,14 @@ public class WingCode : MonoBehaviour
         //Debug.Log("Start!");
     }
 
-    private void OnTriggerEnter2D(Collider2D col)
+    private void OnTriggerStay2D(Collider2D col)
     {
-        if (isSnapped) {
-            //Debug.Log("snapped");
-            return;
-        }
-        else {
-            //Debug.Log("Not snapped");
-        }
 
         if (col.tag == "Left Wing" || col.tag == "Right Wing")
         {
             snappable = true;
             savedCol = col;
-            //Debug.Log("Snapable!");
-            /* orient potential parts to the slots they are near*/
-            if (col.gameObject.name == "Left Wing")
-            {
-                //  Debug.Log("LEFT!");
-                //x = -2.2f;
-                //y = 0.1f;
-                //transform.eulerAngles = new Vector3(0, 0, 180);
-
-
-            }
-            else if (col.gameObject.name == "Right Wing")
-            {
-                //   Debug.Log("RIGHT!");
-               // x = 2.7f;
-                //y = 0.3f;
-               // transform.eulerAngles = new Vector3(0, 0, 0);
-
-            }
-
         }
-
     }
 
     private void OnTriggerExit2D(Collider2D col)
@@ -74,14 +46,17 @@ public class WingCode : MonoBehaviour
         {
             /* wing is disconnected but in range of ship; attach right*/
             //   no parent                                 is snappable       collider still in range     at right wing                                  no other weapons attached
-            if ((gameObject.transform.parent == null) && (snappable == true) && (savedCol != null) && (savedCol.gameObject.name == "Right Wing") && (savedCol.gameObject.transform.childCount == 1))
+            if ((gameObject.transform.parent == null) && (snappable == true) && (savedCol != null) && (savedCol.gameObject.name == "Right Wing"))
             {
-                transform.parent = savedCol.transform;
-                transform.position = Vector2.zero;
-                transform.localPosition = new Vector2(0, 0);
-                snappable = false;
-                isSnapped = true;
+                if ((savedCol.gameObject.transform.childCount == 1) || (savedCol.gameObject.transform.childCount == 2 && savedCol.gameObject.transform.GetChild(1).name == "Cannon"))
+                {
 
+                    transform.parent = savedCol.transform;
+                    transform.position = Vector2.zero;
+                    transform.localPosition = new Vector2(0, 0);
+                    snappable = false;
+                    isSnapped = true;
+                }
             }
             /* weapon is connected to right wing; disconnect*/
             else if ((gameObject.transform.parent) && (transform.parent.gameObject.name == "Right Wing") && (snappable == false))
@@ -89,57 +64,45 @@ public class WingCode : MonoBehaviour
                 transform.parent = null;
                 snappable = true;
                 isSnapped = false;
-
                 IWeapon weapon = gameObject.GetComponent<IWeapon>(); 
                 if (weapon != null) {
                     weapon.stopFiring();
                 }
-
                 if (gameObject.name == "Cannon") {
                     Destroy(gameObject);
                 }
             }
-
         }
 
         /*left wing stuff*/
         else if (Input.GetKeyDown(KeyCode.L))
         {
-            /* wing is disconnected but in range of ship; attach right*/
-            if ((gameObject.transform.parent == null) && (snappable == true) && (savedCol != null) && (savedCol.gameObject.name == "Left Wing") && (savedCol.gameObject.transform.childCount == 1))
+            /* wing is disconnected but in range of ship; attach left*/
+            if ((gameObject.transform.parent == null) && (snappable == true) && (savedCol != null) && (savedCol.gameObject.name == "Left Wing"))
             {
-                //Debug.Log("Connecting\n");
-                transform.parent = savedCol.transform;
-               // Debug.Log("parent check\n");
-
-                transform.position = Vector2.zero;
-                transform.localPosition = new Vector2(0, 0);
-                //Debug.Log("location check\n");
-
-                snappable = false;
-                isSnapped = true;
-
+                if ((savedCol.gameObject.transform.childCount == 1) || (savedCol.gameObject.transform.childCount == 2 && savedCol.gameObject.transform.GetChild(1).name == "Cannon"))
+                {
+                    transform.parent = savedCol.transform;
+                    transform.position = Vector2.zero;
+                    transform.localPosition = new Vector2(0, 0);
+                    snappable = false;
+                    isSnapped = true;
+                }
             }
             /* wing is connected to left wing; disconnect*/
             else if ((gameObject.transform.parent) && (transform.parent.gameObject.name == "Left Wing") && (snappable == false))
             {
-                //Debug.Log("Disconnecting\n");
-
                 transform.parent = null;
                 snappable = true;
                 isSnapped = false;
-
                 IWeapon weapon = gameObject.GetComponent<IWeapon>(); 
                 if (weapon != null) {
                     weapon.stopFiring();
                 }
-
-
                 if (gameObject.name == "Cannon") {
                     Destroy(gameObject);
                 }
             }
         }
     }
-
 }
