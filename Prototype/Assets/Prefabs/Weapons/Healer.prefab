@@ -139,3 +139,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acaba991636d7444bad4afcc92d0e865, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healingRate: 1
+  healthPerTick: 1
+  maxDurability: 15

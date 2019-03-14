@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class PlayerHealth : MonoBehaviour
 {	
 	public float initialHealth;			// The player's starting health
-	private float health;				// The player's current health.
+	public float health;				// The player's current health.
 	public float repeatDamagePeriod = 2f;						
 	public float hurtForce = 10f;				
 	public float damageAmount = 10f;			//if crashing into enemy get damaged this amount

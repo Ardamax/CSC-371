@@ -9,7 +9,7 @@ public class HealerController : MonoBehaviour, IWeapon
     public float healthPerTick = 1f;
     private float timeSinceLastHealed = 0f;
 
-    public int maxDurability = 300;
+    public int maxDurability = 15;
     private int durability;
     private SpriteRenderer r;
 
