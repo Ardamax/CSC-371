@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 123979756195840569}
   - component: {fileID: 3035024443674324961}
   - component: {fileID: 4983040692717832377}
+  - component: {fileID: 1120289028767281390}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -90,3 +91,17 @@ MonoBehaviour:
     type: 3}
   healthRatioThreshold: 0.25
   spawnRate: 15
+--- !u!114 &1120289028767281390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1949882734120579211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51969969cb94d487e8bd3429bbd84163, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pausePanel: {fileID: 5251705567103907458, guid: 1ccb93fee3f4d46998defcefa8ad7ad5,
+    type: 3}

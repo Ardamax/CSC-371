@@ -13,13 +13,12 @@ public class ShotgunController : MonoBehaviour, IWeapon
     private bool firing = false;
     private IProjectile projectile;
 
-    public int maxDurability;
+    public int maxDurability = 30;
     private int durability;
     private SpriteRenderer r;
 
     void Start()
     {
-        maxDurability = 100;
         durability = maxDurability;
         r = GetComponent<SpriteRenderer>();
     }

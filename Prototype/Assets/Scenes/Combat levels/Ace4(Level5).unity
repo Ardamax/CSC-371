@@ -2682,6 +2682,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waves:
+  - {fileID: 1207076809}
+  - {fileID: 1236415422}
+  - {fileID: 846501541}
+  - {fileID: 1615635956}
+  - {fileID: 1961420639}
+  - {fileID: 1669006528}
+  - {fileID: 1800263194}
   - {fileID: 298473199}
   timeBetweenWaves: 5
 --- !u!4 &1193493196
