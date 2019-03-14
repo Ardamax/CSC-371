@@ -1,14 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using System.Timers;
 
 public class Hunter : MonoBehaviour, IEnemy
 {
     public bool isAttacking = false;
     public int health = 100;
-    private string sceneName;
 
     private SpriteRenderer r;
     private float timeSinceHit = 0f;
@@ -27,14 +25,10 @@ public class Hunter : MonoBehaviour, IEnemy
     public GameObject drop;
 
     private GameObject player;
-    private int moveCount = 0;
     public float speed = 1.5f;
     private int direction = 1;
     private Vector2 target;
-    private Vector2 position;
     
-
-
     void Start()
     {
         player = GameObject.Find("Player");
@@ -42,7 +36,6 @@ public class Hunter : MonoBehaviour, IEnemy
         leftWeapon = gameObject.transform.Find("Hunter Left Wing").gameObject.GetComponentInChildren<IWeapon>();
         rightWeapon = gameObject.transform.Find("Hunter Right Wing").gameObject.GetComponentInChildren<IWeapon>();
         drop = gameObject.transform.Find("Hunter Left Wing").GetChild(0).gameObject;
-        sceneName = SceneManager.GetActiveScene().name;
     }
 
     public void startAttacking()
@@ -73,7 +66,6 @@ public class Hunter : MonoBehaviour, IEnemy
             rightWeapon.stopFiring();
             fireCooldown--;
         }
-
     }
     public void OnDamage(int damage)
     {
@@ -92,13 +84,9 @@ public class Hunter : MonoBehaviour, IEnemy
     public void die()
     {
         Instantiate(drop, new Vector2(gameObject.transform.position.x,
-   gameObject.transform.position.y), Quaternion.identity);
+            gameObject.transform.position.y), Quaternion.identity);
         Destroy(gameObject);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-
-
     }
-
 
     void Update()
     {
@@ -116,4 +104,3 @@ public class Hunter : MonoBehaviour, IEnemy
         }
     }
 }
-

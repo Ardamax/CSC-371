@@ -106,6 +106,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8101168557988911696}
   - component: {fileID: 1871366890648791997}
+  - component: {fileID: 8523948077111406492}
   - component: {fileID: 376891404351237541}
   m_Layer: 0
   m_Name: Hunter
@@ -143,12 +144,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fd94c0253247714e9c252cee30c165a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isAttacking: 1
+  isAttacking: 0
   health: 100
   deathDelay: 5
   fireDelay: 100
   drop: {fileID: 0}
   speed: 1.5
+--- !u!114 &8523948077111406492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2819624261714508437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5acd75d20bd191d42b505754bdfe7b77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetY: 6
+  moveSpeed: 2
 --- !u!50 &376891404351237541
 Rigidbody2D:
   serializedVersion: 4
@@ -239,11 +254,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3337104724268978407}
     m_Modifications:
-    - target: {fileID: 6658627354628088927, guid: 69d0092af931d4c4da46453c2736ca3b,
-        type: 3}
-      propertyPath: m_Name
-      value: Shotgun
-      objectReference: {fileID: 0}
     - target: {fileID: 5514989843986049014, guid: 69d0092af931d4c4da46453c2736ca3b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -308,6 +318,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6658627354628088927, guid: 69d0092af931d4c4da46453c2736ca3b,
+        type: 3}
+      propertyPath: m_Name
+      value: Shotgun
       objectReference: {fileID: 0}
     - target: {fileID: 8001635198030200321, guid: 69d0092af931d4c4da46453c2736ca3b,
         type: 3}
@@ -329,11 +344,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3537809959277018629}
     m_Modifications:
-    - target: {fileID: 1337046341038363527, guid: afafd1b12918ad4469877ba8d3938cc5,
-        type: 3}
-      propertyPath: m_Name
-      value: DeployableShieldShooter
-      objectReference: {fileID: 0}
     - target: {fileID: 5680558231698290466, guid: afafd1b12918ad4469877ba8d3938cc5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -398,6 +408,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1337046341038363527, guid: afafd1b12918ad4469877ba8d3938cc5,
+        type: 3}
+      propertyPath: m_Name
+      value: DeployableShieldShooter
       objectReference: {fileID: 0}
     - target: {fileID: 3634211440036114869, guid: afafd1b12918ad4469877ba8d3938cc5,
         type: 3}
