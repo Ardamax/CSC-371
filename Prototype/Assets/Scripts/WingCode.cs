@@ -41,6 +41,14 @@ public class WingCode : MonoBehaviour
     }
     private void Update()
     {
+        if (gameObject.transform.parent == null)
+        {
+            if (gameObject.name == "Cannon")
+            {
+                Destroy(gameObject);
+            }
+            isSnapped = false;
+        }
         /*right wing stuff*/
         if (Input.GetKeyDown(KeyCode.Semicolon))
         {
@@ -59,7 +67,7 @@ public class WingCode : MonoBehaviour
                 }
             }
             /* weapon is connected to right wing; disconnect*/
-            else if ((gameObject.transform.parent) && (transform.parent.gameObject.name == "Right Wing") && (snappable == false))
+            else if ((gameObject.transform.parent) && (transform.parent.gameObject.name == "Right Wing")) //&& (snappable == false))
             {
                 transform.parent = null;
                 snappable = true;
@@ -90,7 +98,7 @@ public class WingCode : MonoBehaviour
                 }
             }
             /* wing is connected to left wing; disconnect*/
-            else if ((gameObject.transform.parent) && (transform.parent.gameObject.name == "Left Wing") && (snappable == false))
+            else if ((gameObject.transform.parent) && (transform.parent.gameObject.name == "Left Wing"))// && (snappable == false))
             {
                 transform.parent = null;
                 snappable = true;

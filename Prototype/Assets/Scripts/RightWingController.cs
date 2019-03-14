@@ -20,7 +20,7 @@ public class RightWingController : MonoBehaviour
 
     void Update()
     {
-        if (gameObject.transform.childCount > 1)
+        if (gameObject.transform.childCount == 2)
         {
             weapon = gameObject.GetComponentInChildren<IWeapon>();
             if (gameObject.CompareTag("Right Wing"))
@@ -38,6 +38,12 @@ public class RightWingController : MonoBehaviour
             else
                 weapon.stopFiring();
         }
-
+        else if (gameObject.transform.childCount > 2)
+        {
+            for (int i = 1; i < gameObject.transform.childCount -1; i++)
+            {
+                gameObject.transform.GetChild(i).parent = null;
+            }
+        }
     }
 }

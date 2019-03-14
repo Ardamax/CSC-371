@@ -17,7 +17,8 @@ public class LeftWingController : MonoBehaviour
     }
 
     void Update() {
-        if (gameObject.transform.childCount > 1)
+
+        if (gameObject.transform.childCount == 2)
         {
             weapon = gameObject.GetComponentInChildren<IWeapon>();
 
@@ -35,6 +36,14 @@ public class LeftWingController : MonoBehaviour
                 weapon.fire();
             else
                 weapon.stopFiring();
+        }
+        // checks if there are multiple weapons equipped on a wing, and detaches the extras
+        else if (gameObject.transform.childCount > 2)
+        {
+            for(int i = 1; i < gameObject.transform.childCount -1; i++)
+            {
+                gameObject.transform.GetChild(i).parent = null;
+            }
         }
     }
 }
