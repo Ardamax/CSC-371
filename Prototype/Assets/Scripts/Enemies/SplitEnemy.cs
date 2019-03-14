@@ -88,7 +88,7 @@ public class SplitEnemy : MonoBehaviour, IEnemy
         else {
             timeSinceSpawned += Time.deltaTime;
             if (timeSinceSpawned > timeBeforeAttacking) {
-                isAttacking = true;
+                //isAttacking = true;
             }
         }
     }

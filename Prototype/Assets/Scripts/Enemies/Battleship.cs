@@ -35,7 +35,9 @@ public class Battleship : MonoBehaviour, IEnemy
         r = gameObject.transform.Find("Body").GetComponent<SpriteRenderer>();
         leftWeapon = gameObject.transform.Find("Battleship Left Wing").gameObject.GetComponentInChildren<IWeapon>();
         rightWeapon = gameObject.transform.Find("Battleship Right Wing").gameObject.GetComponentInChildren<IWeapon>();
-        drop = gameObject.transform.Find("Battleship Left Wing").GetChild(0).gameObject;
+        if (drop == null) {
+            drop = gameObject.transform.Find("Battleship Left Wing").GetChild(0).gameObject;
+        }
     }
 
     public void startAttacking() {

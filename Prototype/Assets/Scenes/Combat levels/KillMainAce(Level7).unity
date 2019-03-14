@@ -12120,8 +12120,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1193493196}
-  - component: {fileID: 1193493195}
-  - component: {fileID: 1193493197}
   - component: {fileID: 1193493198}
   m_Layer: 0
   m_Name: EnemyWaveController
@@ -12130,18 +12128,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1193493195
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1193493194}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ec8971b89b5bad4abd710c3e3fe75ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1193493196
 Transform:
   m_ObjectHideFlags: 0
@@ -12156,33 +12142,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1193493197
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1193493194}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78a2e96d18f201b449c47255eee378f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnTime: 3
-  spawnDelay: 1.5
-  enemies:
-  - {fileID: 6242946513699068825, guid: c5600b7aaaa1934489d9bf30c2d1957c, type: 3}
-  - {fileID: 6242946513699068825, guid: 8ef0eca4a32ba5142afa94e77423032f, type: 3}
-  - {fileID: 6242946513699068825, guid: c5600b7aaaa1934489d9bf30c2d1957c, type: 3}
-  Boss: {fileID: 3344995502531348885, guid: af146a53a5e7d81468baec6f44c567fa, type: 3}
-  baddies:
-  - {fileID: 6242946513699068825, guid: 8ef0eca4a32ba5142afa94e77423032f, type: 3}
-  - {fileID: 3344995502531348885, guid: af146a53a5e7d81468baec6f44c567fa, type: 3}
-  - {fileID: 3344995502531348885, guid: af146a53a5e7d81468baec6f44c567fa, type: 3}
-  - {fileID: 3344995502531348885, guid: af146a53a5e7d81468baec6f44c567fa, type: 3}
-  - {fileID: 3344995502531348885, guid: af146a53a5e7d81468baec6f44c567fa, type: 3}
-  - {fileID: 6242946513699068825, guid: c5600b7aaaa1934489d9bf30c2d1957c, type: 3}
-  BossSpawnsIn: 75
 --- !u!114 &1193493198
 MonoBehaviour:
   m_ObjectHideFlags: 0

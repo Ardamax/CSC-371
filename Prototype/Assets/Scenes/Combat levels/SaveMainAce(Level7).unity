@@ -613,15 +613,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1193493194}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ec8971b89b5bad4abd710c3e3fe75ec, type: 3}
+  m_Script: {fileID: 11500000, guid: e93b187202803904f928dfa28ec16077, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waveOnePrefabs:
-  - {fileID: 6096314948531382005, guid: fbb71fe94c95c134ca3b581fc3318c77, type: 3}
-  - {fileID: 6096314948531382005, guid: fbb71fe94c95c134ca3b581fc3318c77, type: 3}
-  - {fileID: 6096314948531382005, guid: fbb71fe94c95c134ca3b581fc3318c77, type: 3}
-  timeUntilFirstWave: 5
-  waveOneApproachRate: 1.5
+  waves: []
+  timeBetweenWaves: 5
 --- !u!4 &1193493196
 Transform:
   m_ObjectHideFlags: 0

@@ -62,8 +62,8 @@ public class DoubleEnemy : MonoBehaviour, IEnemy
 
     public void die() {
         // Instantiate new SingleEnemies
-        GameObject leftSpawn = Instantiate(splitEnemyPrefab, new Vector2(gameObject.transform.position.x + singleEnemySpawnXOffset, gameObject.transform.position.y), transform.root.rotation);
-        GameObject rightSpawn = Instantiate(splitEnemyPrefab, new Vector2(gameObject.transform.position.x - singleEnemySpawnXOffset, gameObject.transform.position.y), transform.root.rotation);
+        GameObject leftSpawn = Instantiate(splitEnemyPrefab, new Vector2(gameObject.transform.position.x + singleEnemySpawnXOffset, gameObject.transform.position.y), transform.rotation);
+        GameObject rightSpawn = Instantiate(splitEnemyPrefab, new Vector2(gameObject.transform.position.x - singleEnemySpawnXOffset, gameObject.transform.position.y), transform.rotation);
 
         leftSpawn.GetComponent<SplitEnemy>().setTargetOffsetX(1f);
         rightSpawn.GetComponent<SplitEnemy>().setTargetOffsetX(-1f);

@@ -131,9 +131,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5acd75d20bd191d42b505754bdfe7b77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minX: -7
-  maxX: 7
-  initialY: 6.5
   targetY: 3.5
   moveSpeed: 1
 --- !u!114 &9092022133051131722
@@ -153,7 +150,8 @@ MonoBehaviour:
   speed: 3
   timeBetweenMovements: 4
   singleEnemySpawnXOffset: 1
-  splitEnemyPrefab: {fileID: 0}
+  splitEnemyPrefab: {fileID: 8004178818126879444, guid: c0d5c39e33b1cb74ca0e96dee86f14e2,
+    type: 3}
 --- !u!1 &4454385426476797724
 GameObject:
   m_ObjectHideFlags: 0
@@ -274,11 +272,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4454385424899016377}
     m_Modifications:
-    - target: {fileID: 9204026186970493975, guid: df876f7daa6a6c5409654c9126947980,
-        type: 3}
-      propertyPath: m_Name
-      value: FlameThrower
-      objectReference: {fileID: 0}
     - target: {fileID: 7427674703841883374, guid: df876f7daa6a6c5409654c9126947980,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -339,6 +332,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 0.75
       objectReference: {fileID: 0}
+    - target: {fileID: 9204026186970493975, guid: df876f7daa6a6c5409654c9126947980,
+        type: 3}
+      propertyPath: m_Name
+      value: FlameThrower
+      objectReference: {fileID: 0}
     - target: {fileID: 1018258019410614046, guid: df876f7daa6a6c5409654c9126947980,
         type: 3}
       propertyPath: isSnapped
@@ -359,11 +357,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4454385425296988359}
     m_Modifications:
-    - target: {fileID: 9204026186970493975, guid: df876f7daa6a6c5409654c9126947980,
-        type: 3}
-      propertyPath: m_Name
-      value: FlameThrower
-      objectReference: {fileID: 0}
     - target: {fileID: 7427674703841883374, guid: df876f7daa6a6c5409654c9126947980,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -418,6 +411,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9204026186970493975, guid: df876f7daa6a6c5409654c9126947980,
+        type: 3}
+      propertyPath: m_Name
+      value: FlameThrower
+      objectReference: {fileID: 0}
+    - target: {fileID: 1018258019410614046, guid: df876f7daa6a6c5409654c9126947980,
+        type: 3}
+      propertyPath: isSnapped
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df876f7daa6a6c5409654c9126947980, type: 3}

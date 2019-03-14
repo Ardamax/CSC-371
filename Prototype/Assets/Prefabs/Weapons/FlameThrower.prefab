@@ -125,7 +125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c29c6e1933ee4c4d9c15ebf5145d774, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
+  speed: 1
   weapon: {fileID: 0}
 --- !u!114 &6214904781405362868
 MonoBehaviour:
@@ -141,3 +141,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   flamePrefab: {fileID: 4957956478318488420, guid: 92582a606be12d34b86c733ee3e77903,
     type: 3}
+  maxDurability: 0

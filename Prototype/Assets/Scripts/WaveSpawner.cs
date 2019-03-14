@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class WaveSpawner : MonoBehaviour
 {
@@ -37,6 +38,7 @@ public class WaveSpawner : MonoBehaviour
         currentWaveId++;
         if (currentWaveId >= waves.Length) {
             // No more waves - all waves completed.
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             this.enabled = false;
         }
         else {

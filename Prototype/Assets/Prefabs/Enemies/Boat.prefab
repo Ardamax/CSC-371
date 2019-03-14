@@ -146,6 +146,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAttacking: 0
   health: 10
+  speed: 2
   damage: 5
 --- !u!114 &8632240735807003176
 MonoBehaviour:
@@ -159,11 +160,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5acd75d20bd191d42b505754bdfe7b77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minX: -7
-  maxX: 7
-  initialY: 6.5
-  targetY: 3.5
-  moveSpeed: 1
+  targetY: 7
+  moveSpeed: 2
 --- !u!50 &6760201547656202409
 Rigidbody2D:
   serializedVersion: 4
