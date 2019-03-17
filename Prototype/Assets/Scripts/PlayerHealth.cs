@@ -15,9 +15,13 @@ public class PlayerHealth : MonoBehaviour
 	private Vector3 healthScale;
     private string sceneName;
 
+    public AudioClip impact;
+    static AudioSource audioSrc;
+
 
     void Awake ()
 	{
+        audioSrc = GetComponent<AudioSource>();
         healthBar = GameObject.Find("HealthBar").GetComponent<SpriteRenderer>();
 
 		// Getting the intial scale of the healthbar (whilst the player has full health).
@@ -72,6 +76,7 @@ public class PlayerHealth : MonoBehaviour
     void OnDamage(int damage)
     {
         health -= damage;
+        audioSrc.PlayOneShot(impact, 0.7F);
         UpdateHealthBar();
         if(health <= 0f)
         {
@@ -96,9 +101,11 @@ public class PlayerHealth : MonoBehaviour
 
 		// Reduce the player's health
 		health -= damageAmount;
+        audioSrc.PlayOneShot(impact, 0.7F);
 
-		// Update what the health bar looks like.
-		UpdateHealthBar();
+
+        // Update what the health bar looks like.
+        UpdateHealthBar();
 
 	}
 
