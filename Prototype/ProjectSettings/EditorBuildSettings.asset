@@ -54,6 +54,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Combat levels/SaveMainAce(Level7).unity
     guid: 18880a98bba0a5c4fb016aa65a84d2b3
   - enabled: 1
+    path: Assets/Scenes/Cutscenes/SavedMainAceWinGame.unity
+    guid: 6793d9cea516a61468f1327deec8afbe
+  - enabled: 1
     path: Assets/Scenes/Combat levels/KillMainAce(Level7).unity
     guid: 6e8656c8f1bed3f4d9c3d848d5346699
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/KilledMainAceWinGame.unity
+    guid: bcbb9abd2b768d741966d31f36892820
   m_configObjects: {}
