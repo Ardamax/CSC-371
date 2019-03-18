@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Larry Xu
 public class Boat : MonoBehaviour, IEnemy
 {
     public bool isAttacking = false;
@@ -24,7 +25,6 @@ public class Boat : MonoBehaviour, IEnemy
         player = GameObject.Find("Player");
         r = gameObject.transform.Find("Body").GetComponent<SpriteRenderer>();
     }
-
     public void startAttacking() {
         this.isAttacking = true;
     }

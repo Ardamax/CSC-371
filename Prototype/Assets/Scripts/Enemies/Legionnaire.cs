@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Larry Xu
 public class Legionnaire : MonoBehaviour, IEnemy
 {
     public bool isAttacking = false;

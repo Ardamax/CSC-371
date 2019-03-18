@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Larry Xu
 public class Battleship : MonoBehaviour, IEnemy
 {
+    //Larry Xu
     public bool isAttacking = false;
     public int health = 20;
     public int moveAmount = 250;
@@ -29,6 +31,7 @@ public class Battleship : MonoBehaviour, IEnemy
     private int fireCooldown = 0;
 
     public GameObject drop;
+    //Larry Xu
     void Start()
     {
         player = GameObject.Find("Player");
@@ -44,7 +47,7 @@ public class Battleship : MonoBehaviour, IEnemy
         // Spencer
         this.isAttacking = true;
     }
-
+    //Larry Xu
     public void OnDamage(int damage)
     {
         if (isAttacking) {
@@ -58,13 +61,16 @@ public class Battleship : MonoBehaviour, IEnemy
             }
         }        
     }
+    //Larry Xu
     public void die()
     {
+        //Spencer
         drop.GetComponent<WingCode>().isSnapped = false;
         Instantiate(drop, new Vector2(gameObject.transform.position.x,
             gameObject.transform.position.y), Quaternion.identity);
         Destroy(gameObject);
     }
+    //Larry Xu
     void Update()
     {
         if (isAttacking) {
@@ -79,7 +85,7 @@ public class Battleship : MonoBehaviour, IEnemy
             fire();
         }
     }
-
+    //Larry Xu
     public void fire()
     {
         if (fireCooldown <= 0)
@@ -98,6 +104,7 @@ public class Battleship : MonoBehaviour, IEnemy
         }
             
     }
+    //Larry Xu
     public void move()
     {
         if (moveCount > moveAmount)

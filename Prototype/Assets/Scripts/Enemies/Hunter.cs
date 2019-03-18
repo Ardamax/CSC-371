@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Timers;
 
+//Larry Xu
 public class Hunter : MonoBehaviour, IEnemy
 {
     public bool isAttacking = false;

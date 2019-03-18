@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Larry Xu
 public class CannonBallController : MonoBehaviour, IProjectile
 {
     // Start is called before the first frame update
@@ -37,6 +38,7 @@ public class CannonBallController : MonoBehaviour, IProjectile
     public void setTarget(string t)
     {
         target = t;
+        damage = 5;
     }
     void OnTriggerEnter2D(Collider2D other)
     {
