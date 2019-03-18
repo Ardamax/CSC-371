@@ -15,6 +15,8 @@ public class PlayerHealth : MonoBehaviour
 	private Vector3 healthScale;
     private string sceneName;
 
+
+    //Audio stuff added by Chris
     public AudioClip impact;
     static AudioSource audioSrc;
 

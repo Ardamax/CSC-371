@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Written by Chris
 public class WingCode : MonoBehaviour
 {
 
@@ -53,9 +54,9 @@ public class WingCode : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Semicolon))
         {
             /* wing is disconnected but in range of ship; attach right*/
-            //   no parent                                 is snappable       collider still in range     at right wing                                  no other weapons attached
+            //   no parent                                 is snappable       collider still in range     at right wing                               
             if ((gameObject.transform.parent == null) && (snappable == true) && (savedCol != null) && (savedCol.gameObject.name == "Right Wing"))
-            {
+            {   // no nondefault weapon attached
                 if ((savedCol.gameObject.transform.childCount == 1) || (savedCol.gameObject.transform.childCount == 2 && savedCol.gameObject.transform.GetChild(1).name == "Cannon"))
                 {
 

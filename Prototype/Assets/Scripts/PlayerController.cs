@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour
     {
 
     }
-    void FixedUpdate()
+    void FixedUpdate() //Original movement by ______ Movement remade by Chris to get rid of sliding
     {
 
         float horizontalMovement = 0;
@@ -72,8 +72,6 @@ public class PlayerController : MonoBehaviour
 
         Vector2 movement = new Vector2(horizontalMovement, verticalMovement) * speed;
         transform.Translate(movement * Time.deltaTime);
-
-        //rb2d.velocity = movement;
 
     }
 }

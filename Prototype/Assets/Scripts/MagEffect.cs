@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//written by Chris
 public class MagEffect : MonoBehaviour
 {
     //activates lightning effects

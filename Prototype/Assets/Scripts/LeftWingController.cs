@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//code by 
 public class LeftWingController : MonoBehaviour
 {
     IWeapon weapon;
@@ -16,7 +17,7 @@ public class LeftWingController : MonoBehaviour
         }
     }
 
-    void Update() {
+    void Update() { //if conditions modified by Chris to fix bugs
 
         if (gameObject.transform.childCount == 2)
         {
@@ -38,7 +39,7 @@ public class LeftWingController : MonoBehaviour
                 weapon.stopFiring();
         }
         // checks if there are multiple weapons equipped on a wing, and detaches the extras
-        else if (gameObject.transform.childCount > 2)
+        else if (gameObject.transform.childCount > 2)  //else if added by Chris to fix bugs
         {
             for(int i = 1; i < gameObject.transform.childCount -1; i++)
             {

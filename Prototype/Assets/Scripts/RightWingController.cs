@@ -20,7 +20,7 @@ public class RightWingController : MonoBehaviour
 
     void Update()
     {
-        if (gameObject.transform.childCount == 2)
+        if (gameObject.transform.childCount == 2) //if conditions modified by Chris to fix bugs
         {
             weapon = gameObject.GetComponentInChildren<IWeapon>();
             if (gameObject.CompareTag("Right Wing"))
@@ -38,9 +38,10 @@ public class RightWingController : MonoBehaviour
             else
                 weapon.stopFiring();
         }
+        // checks if there are multiple weapons equipped on a wing, and detaches the extras
         else if (gameObject.transform.childCount > 2)
         {
-            for (int i = 1; i < gameObject.transform.childCount -1; i++)
+            for (int i = 1; i < gameObject.transform.childCount -1; i++) //else if added by Chris to fix bugs
             {
                 gameObject.transform.GetChild(i).parent = null;
             }
