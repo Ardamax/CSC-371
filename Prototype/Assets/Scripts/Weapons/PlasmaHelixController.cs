@@ -26,6 +26,7 @@ public class PlasmaHelixController : MonoBehaviour, IWeapon
         r = GetComponent<SpriteRenderer>();
         player = GameObject.Find("Player");
     }
+    //Larry Xu
     public void degrade()
     {
         durability--;
@@ -46,6 +47,7 @@ public class PlasmaHelixController : MonoBehaviour, IWeapon
     {
         return "PlasmaHelix";
     }
+    //Larry Xu
     public void aim(int aimSpeed)
     {
         vectorToTarget = player.transform.position - transform.position;
@@ -58,6 +60,7 @@ public class PlasmaHelixController : MonoBehaviour, IWeapon
     void Update()
     {
         timeSinceLastSpawned += Time.deltaTime;
+        //Larry Xu
         if (firing && timeSinceLastSpawned > spawnRate)
         {
             timeSinceLastSpawned = 0f;
