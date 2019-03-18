@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// Spencer
 public class DoubleEnemy : MonoBehaviour, IEnemy
 {
     public bool isAttacking = false;

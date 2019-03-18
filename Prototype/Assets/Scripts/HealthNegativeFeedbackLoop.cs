@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// Spencer
 public class HealthNegativeFeedbackLoop : MonoBehaviour
 {
     public GameObject healthWeaponPrefab;

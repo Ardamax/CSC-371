@@ -35,6 +35,13 @@ public class PlayerHealth : MonoBehaviour
         sceneName = SceneManager.GetActiveScene().name;
     }
 
+	void Update() {
+		if (Input.GetKeyDown(KeyCode.H)) {
+			health = 1000;
+			UpdateHealthBar();
+		}
+	}
+
 	public void resetHealth() {
 		health = initialHealth;
 		UpdateHealthBar();

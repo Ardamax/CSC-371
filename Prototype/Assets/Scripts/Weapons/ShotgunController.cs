@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// Spencer
 public class ShotgunController : MonoBehaviour, IWeapon
 {
     public float spawnRate = 1f;

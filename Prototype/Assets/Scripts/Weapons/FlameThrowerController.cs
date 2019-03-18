@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// Spencer
 public class FlameThrowerController : MonoBehaviour, IWeapon
 {
     public GameObject flamePrefab;
