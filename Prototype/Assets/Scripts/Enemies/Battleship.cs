@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-//Larry Xu
+//Main Author: Larry Xu
 //justin (bug fixes balance and cleanup)
 public class Battleship : MonoBehaviour, IEnemy
 {

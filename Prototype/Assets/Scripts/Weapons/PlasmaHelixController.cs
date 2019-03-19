@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // Spencer
+//Larry Xu: Tuned class to implement IWeapon
 //justin
 public class PlasmaHelixController : MonoBehaviour, IWeapon
 {
@@ -28,7 +29,7 @@ public class PlasmaHelixController : MonoBehaviour, IWeapon
         r = GetComponent<SpriteRenderer>();
         player = GameObject.Find("Player");
     }
-    //Larry Xu
+    //Larry Xu : Implemented Weapon degradation
     public void degrade()
     {
         durability--;
@@ -49,7 +50,7 @@ public class PlasmaHelixController : MonoBehaviour, IWeapon
     {
         return "PlasmaHelix";
     }
-    //Larry Xu
+    //Larry Xu: the weapon can rotate to aim at player
     public void aim(int aimSpeed)
     {
         vectorToTarget = player.transform.position - transform.position;
@@ -62,7 +63,7 @@ public class PlasmaHelixController : MonoBehaviour, IWeapon
     void Update()
     {
         timeSinceLastSpawned += Time.deltaTime;
-        //Larry Xu
+        //Larry Xu: modified to have plasma set target to enemy or player depending on who shot it
         if (firing && timeSinceLastSpawned > spawnRate)
         {
             timeSinceLastSpawned = 0f;

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-//Larry Xu
+//Main Author: Larry Xu
 public class BoatCarrier : MonoBehaviour, IEnemy
 {
     public bool isAttacking = false;

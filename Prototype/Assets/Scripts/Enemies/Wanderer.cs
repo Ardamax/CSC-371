@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Timers;
 
-//Larry Xu
+//Main Author: Larry Xu
 public class Wanderer : MonoBehaviour, IEnemy
 {
     public float xbounds;

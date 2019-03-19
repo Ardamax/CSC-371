@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-//Larry Xu
-//Justin 
+//Main Author: Larry Xu
+
 public class Boat : MonoBehaviour, IEnemy
 {
     public bool isAttacking = false;
@@ -64,6 +64,7 @@ public class Boat : MonoBehaviour, IEnemy
     {
         Vector3 vectorToTarget = player.transform.position - transform.position;
         float angle = Mathf.Atan2(vectorToTarget.y, vectorToTarget.x) * Mathf.Rad2Deg - 90;
+        //Justin fixed Quaternion
         Quaternion q = Quaternion.AngleAxis(angle, Vector3.forward);
         transform.rotation = Quaternion.Slerp(transform.rotation, q, Time.deltaTime * speed);
 

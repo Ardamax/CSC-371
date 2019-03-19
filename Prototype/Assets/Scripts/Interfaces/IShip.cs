@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-//Larry Xu
+//Main Author: Larry Xu
 /* retired interface */
 public interface IShip
 {

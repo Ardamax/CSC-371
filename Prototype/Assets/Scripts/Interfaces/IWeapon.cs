@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-//Larry Xu
+//Main Author: Larry Xu
 public interface IWeapon
 {
     void fire();

@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//Larry Xu
+//Main Author: Larry Xu
 public class DoubleCannonController : MonoBehaviour, IWeapon
 {
     public float spawnRate = 0.1f;

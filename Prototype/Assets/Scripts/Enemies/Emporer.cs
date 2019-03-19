@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-//Larry Xu
+//Main Author: Larry Xu
 public class Emporer : MonoBehaviour, IEnemy
 {
     public bool isAttacking = false;
