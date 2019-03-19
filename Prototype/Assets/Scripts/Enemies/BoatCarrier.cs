@@ -14,12 +14,11 @@ public class BoatCarrier : MonoBehaviour, IEnemy
     private SpriteRenderer r;
     private float timeSinceHit = 0f;
     private float timeSinceLastAttack = 0f;
+    private float timeSinceBoatSpawn = 0f;
     private float damageTime = 0.3f;
 
-    public int boatSpawnDelay = 5000;
-    private int boatSpawnCounter = 0;
-    public int fireWeaponDelay = 1000;
-    private int fireWeaponCounter = 0;
+    public float boatSpawnDelay = 5f;
+    public float firingInterval = 1f;
     private IWeapon weapon;
 
 
@@ -62,24 +61,21 @@ public class BoatCarrier : MonoBehaviour, IEnemy
     }
     public void fire()
     {
-        if (fireWeaponCounter >= fireWeaponDelay)
+        if (timeSinceLastAttack >= firingInterval)
         {
-            fireWeaponCounter = 0;
+            timeSinceLastAttack = 0;
             weapon.fire();
         }
         else
         {
             weapon.stopFiring();
-            fireWeaponCounter++;
         }
-        if (boatSpawnCounter >= boatSpawnDelay)
+        if (timeSinceBoatSpawn >= boatSpawnDelay)
         {
-            boatSpawnCounter = 0;
+            timeSinceBoatSpawn = 0;
             Instantiate(boat, new Vector2(gameObject.transform.position.x,
    gameObject.transform.position.y), Quaternion.identity);
         }
-        else
-            boatSpawnCounter++;
     }
     public void OnDamage(int damage)
     {
@@ -110,6 +106,7 @@ public class BoatCarrier : MonoBehaviour, IEnemy
         if (isAttacking) {
             timeSinceHit += Time.deltaTime;
             timeSinceLastAttack += Time.deltaTime;
+            timeSinceBoatSpawn += Time.deltaTime;
 
             if (r.color != Color.white && timeSinceHit >= damageTime)
             {
