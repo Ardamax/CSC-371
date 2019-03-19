@@ -248,7 +248,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000049591, y: 0}
+  m_AnchoredPosition: {x: -0.000049591064, y: 0}
   m_SizeDelta: {x: 119.6, y: 55.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &87050155
@@ -1071,7 +1071,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 3b352bb8433134fc5a9d5207f82e9067, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 4
     m_MaxSize: 40
     m_Alignment: 0
@@ -1080,10 +1080,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'ACE: ah you foolish child. you do not know what you have gotten yourself
-    into. Our deaths will serve you nothing.  You will find him in the land of frost.
-
-'
+  m_Text: 'Ace 1: You idiot! You do not know what you have gotten yourself into. Our
+    deaths will serve you nothing. You will find Brent in the land of frost. He''ll
+    finish you off!'
 --- !u!222 &756032452
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1166,7 +1165,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 3b352bb8433134fc5a9d5207f82e9067, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 4
     m_MaxSize: 40
     m_Alignment: 0
@@ -1175,10 +1174,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'You fly off to the frozen tundra. Weary that many have flown there never
-    to return. What could the Empire possibly want with such a desolate place.
-
-'
+  m_Text: 'Narrator: You fly off to the frozen tundra, weary that many have flown
+    there never to return. What could the Empire possibly want with such a desolate
+    place?'
 --- !u!222 &759321995
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1501,7 +1499,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 3b352bb8433134fc5a9d5207f82e9067, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 4
     m_MaxSize: 40
     m_Alignment: 0
@@ -1510,10 +1508,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'I got you now!.  You will pay for what you did to Vernia and to my Friend.
-    I will hunt you all down. Where is the second ace!
-
-'
+  m_Text: 'You: I got you now!. You will pay for what you did to Vernia and Percival.
+    I will hunt you all down. Where is the second ace?!'
 --- !u!222 &959534323
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -983,7 +983,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 3b352bb8433134fc5a9d5207f82e9067, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 4
     m_MaxSize: 40
     m_Alignment: 0
@@ -992,10 +992,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'I will avenge you Percy. Those Aces have no idea the wrath they have wrought.
-    I will hunt them down to the ends of Arret. FOR PERCY!
+  m_Text: 'Narrator: As you weep, your tears of grief slowly turn into tears of anger.
+    The emotions manifest.
 
-'
+    You: I will avenge you Percy. Those Aces have no idea the wrath they have wrought.
+    I will hunt them down to the ends of Arret. For Vernia. FOR PERCIVAL!'
 --- !u!222 &756032452
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1078,7 +1079,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 3b352bb8433134fc5a9d5207f82e9067, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 4
     m_MaxSize: 40
     m_Alignment: 0
@@ -1087,10 +1088,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'So you built a new airship from the scrap of the plane that you and Percy
-    piloted. Only did he stop to bury Percy and say a few words of respect. With such
-    great engineering prowess the airship took to the skies, and off you are, over
-    the Wells.
+  m_Text: 'Narrator: And so you build a new airship from remains of your plane that
+    you and Percy piloted. You take a break only to bury Percy and say a few words
+    of respect. With your exemplary engineering prowess, the airship took to the skies,
+    and so begins your new journey over the Wells.
 
 '
 --- !u!222 &759321995
@@ -1403,7 +1404,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 3b352bb8433134fc5a9d5207f82e9067, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 4
     m_MaxSize: 40
     m_Alignment: 0
@@ -1412,8 +1413,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Oh man that was quite a fall. Percy, you feeling ok...Percy! Percy! Oh
-    my Gosh NO! PERCYYYYY!
+  m_Text: 'Narrator: You don''t know how long you''ve been out. Slowly, you rise from
+    the rubble covering your seat. Luckily, you''ve survived. However, you remember
+    Percival...
+
+
+    You: Percy, you feeling ok...Percy! Percy! Oh my Gosh NO! PERCYYYYY!
 
 '
 --- !u!222 &942359908

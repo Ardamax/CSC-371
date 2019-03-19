@@ -1420,7 +1420,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 3b352bb8433134fc5a9d5207f82e9067, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 4
     m_MaxSize: 40
     m_Alignment: 0
@@ -1429,10 +1429,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Princess: that is what this was all about? You must know now from all your
-    tavels that we attacked only to protect all of Arret. Vernia must be stopped.
-    I am sorry about your friend but many more will be lost. The flagship Approches
-    let us talk'
+  m_Text: 'Narrator: As your desire to avenge Percy dulled over time, the Princess''s
+    words have pieced your encounters. You begin to question if the Vernian Government
+    was as just as it seemed.
+
+    Princess: At least, it seems you''ve realized that our reasons to fight are warranted.
+    Come, let us talk in the Flagship.'
 --- !u!222 &756032452
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1515,7 +1517,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 3b352bb8433134fc5a9d5207f82e9067, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 4
     m_MaxSize: 40
     m_Alignment: 0
@@ -1524,11 +1526,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'You: I have learned much taking up the mantel of my best friend. But I
-    must serve my people, my family, my friends.
+  m_Text: 'You: Even if the Empire''s reasons to fight are just, I cannot simply stop
+    fighting. I would be abandoning my nation, family, and my best friend.
 
-    Princess: A fair persute. Then you must make the Decision will You serve the Empire
-    or will you Serve Vernia.'
+    Princess: You now realize that no matter what, people will suffer. Now choose:
+    side with the just Empire, or protect your remaining family in Vernia.'
 --- !u!222 &759321995
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1751,7 +1753,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 3b352bb8433134fc5a9d5207f82e9067, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 4
     m_MaxSize: 40
     m_Alignment: 0
@@ -1760,11 +1762,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Last Ace: So you have hunt us down and beaten us all vernian, What now
-    do you plot?
+  m_Text: 'Narrator: You barge into the gates of Fluson and see the princess.
 
-    You: Princess? Where is the Ace that shot down Percy? I must fulfill my debt to
-    him!'
+    Princess: So you have hunted us all down. Tell me, why does Vernia want so badly
+    to destroy Arret? What do they gain?
+
+'
 --- !u!222 &942359908
 CanvasRenderer:
   m_ObjectHideFlags: 0

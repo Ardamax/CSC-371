@@ -1120,7 +1120,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 3b352bb8433134fc5a9d5207f82e9067, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 4
     m_MaxSize: 40
     m_Alignment: 0
@@ -1132,7 +1132,7 @@ MonoBehaviour:
   m_Text: 'Narrator: As the wanderer finishes his sentence the ground starts to shake
     and clouds fill the sky.
 
-    You: What is going on, What are you doing?'
+    You: What is going on ? Do you know anything about this?'
 --- !u!222 &756032452
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1215,7 +1215,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 3b352bb8433134fc5a9d5207f82e9067, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 4
     m_MaxSize: 40
     m_Alignment: 0
@@ -1224,12 +1224,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Wanderer: Now you know Vernian why we can''t just stand by.
+  m_Text: 'Wanderer: Now you Vernian know why we can''t just stand by.
 
-    You: The lakes they are freezing, who could do such a thing?
+    You: The lakes are freezing, how is this happening? Is someone behind this?
 
-    Wanderer: You know in your heart who is doing this Vernian. Go to Fluson in the
-    Empire. There the floating city will have your answers.'
+    Wanderer: I can see now that you''re just a poor sheep to the Vernian government.
+    Go to Fluson in the Empire. There, the floating city will have your answers'
 --- !u!222 &759321995
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1452,7 +1452,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 3b352bb8433134fc5a9d5207f82e9067, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 4
     m_MaxSize: 40
     m_Alignment: 0
@@ -1461,9 +1461,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "You: Wanderer why did you join the Empire. Your clan has always stayed
-    neutral in the conflicts. \nWanderer: Have you not seen what is happening to Arret,
-    Even us wanderers could not stand by."
+  m_Text: 'You: Of all people I did not expect you to join the Empire. Your nomadic
+    clan has stayed neutral for centuries!
+
+    Wanderer: Have you not seen what is happening to Arret? Plague, pestilence, and
+    desolation is spreading across the land. Even us wanderers cannot ignore this
+    any longer.'
 --- !u!222 &942359908
 CanvasRenderer:
   m_ObjectHideFlags: 0

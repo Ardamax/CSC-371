@@ -1110,7 +1110,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 3b352bb8433134fc5a9d5207f82e9067, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 4
     m_MaxSize: 40
     m_Alignment: 0
@@ -1119,11 +1119,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'You are a Mighty Engineer. You have grown up with your best friend Percy
-    you have always had each other''s backs. Having freshly graduated from the academy
-    you and your best friend...Your brother will get to take to the skies. Together.
-
-'
+  m_Text: You are a Mighty Engineer. Having grown up with your best friend Percival,
+    you two have always had each other's backs. After freshly graduating from the
+    Vernian Air Force academy you and your best friend anticipate taking off to the
+    skies - together.
 --- !u!222 &756032452
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1206,7 +1205,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 3b352bb8433134fc5a9d5207f82e9067, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 4
     m_MaxSize: 40
     m_Alignment: 0
@@ -1215,9 +1214,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "You and Percy are on an armed training flight when you get the news. THE
-    EMPIRE HAS INVADED. All hands to Battlestations. You and Percy are going to take
-    on the Empire. \n"
+  m_Text: 'You and Percy are on an armed training flight when a code red message was
+    relayed: "THE EMPIRE HAS INVADED. All hands to Battlestations". You and Percy
+    have been suddenly enlisted to fight the Empire.'
 --- !u!222 &759321995
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1528,7 +1527,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 3b352bb8433134fc5a9d5207f82e9067, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 4
     m_MaxSize: 40
     m_Alignment: 0
@@ -1537,10 +1536,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Welcome to the World of Arret, a land wrought with turmoil. A place where
-    sea monsters and Airships coincide. The major countries of the mainland have come
-    together to form the Empire. The island people of Vernia have taken notice and
-    are on high alert. \n"
+  m_Text: "Welcome to the World of Arret, a land recently wrought with turmoil. The
+    major countries of the mainland have come together to form the Empire. The island
+    people of Vernia have taken notice and are on high alert. \n"
 --- !u!222 &942359908
 CanvasRenderer:
   m_ObjectHideFlags: 0

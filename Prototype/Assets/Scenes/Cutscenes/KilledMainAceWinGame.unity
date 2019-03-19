@@ -1071,7 +1071,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 3b352bb8433134fc5a9d5207f82e9067, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 4
     m_MaxSize: 40
     m_Alignment: 0
@@ -1080,9 +1080,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Narrator: You are receved with a heros welcome. All the people of Vernia
-    chant your name. Marble statues are erected of you in town squares. Nevertheless
-    as all this is done you still fee a bit empty inside. '
+  m_Text: 'Narrator: You are given a hero''s welcome. The people of Vernia chant your
+    name. Marble statues of you are erected in town squares. Despite all the fame
+    and money you''ve acquired, you cannot rid yourself of the emptiness of losing
+    Percy. You sometimes have doubts of if you''ve served the right cause, but you
+    quickly drown the thought away with the best mead Vernia has to offer.'
 --- !u!222 &756032452
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1165,7 +1167,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 3b352bb8433134fc5a9d5207f82e9067, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 4
     m_MaxSize: 40
     m_Alignment: 0
@@ -1174,9 +1176,15 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Narrator: Twenty years flashes by quicker than you can blink. odd occurances
-    have been happening all the time but latly the whole world has been sinking and
-    floating up. Guess Vernia was conducting strange tests'
+  m_Text: 'Narrator: Twenty years flashes by quicker than you can blink. The rest
+    of Arret has slowly corroded into a desolate wasteland. It is slowly realized
+    by the public that Vernia had been sucking the resources out of every other nation
+    to mantain the nation''s wealth. Now that the rest of Arret has fallen, Vernia
+    will soon follow, without any more resources to procure.
+
+
+    You fall into an untreatable illness. You think of your actions for Percy. However,
+    you whisper: "Sorry, princess...."'
 --- !u!222 &759321995
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1499,7 +1507,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 3b352bb8433134fc5a9d5207f82e9067, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 4
     m_MaxSize: 40
     m_Alignment: 0
@@ -1508,8 +1516,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Narrator: victorious you look back at the empire in flames, You have avenged
-    your country and will surly be recognized as a hero for all time'
+  m_Text: 'Narrator: Victorious, you look back at the empire in flames. You have avenged
+    Percival and will surly be recognized as one of the great heroes of Vernia.'
 --- !u!222 &959534323
 CanvasRenderer:
   m_ObjectHideFlags: 0

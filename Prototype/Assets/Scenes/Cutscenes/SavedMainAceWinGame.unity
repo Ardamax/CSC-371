@@ -1071,7 +1071,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 3b352bb8433134fc5a9d5207f82e9067, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 4
     m_MaxSize: 40
     m_Alignment: 0
@@ -1080,12 +1080,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Narrator: The world lifts you on its sholders. The princess asked for your
-    hand in marrage, having fallen in love with you when she first met you. You will
-    soon be ruler of the empyre and Vernia wishes for you to be its ruler as well...
-    life is going well for our young Eningeer.
-
-'
+  m_Text: 'Narrator: The world lifts you on its sholders. The princess asks for your
+    hand in marriage, having fallen in love with you. You are undisputedly crowned
+    the newest ruler of the united Empire. The Vernian public, after learning of your
+    deeds in cleaning its government, also hails you as their leader. Life is going
+    well for our young Eningeer.'
 --- !u!222 &756032452
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1168,7 +1167,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 3b352bb8433134fc5a9d5207f82e9067, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 4
     m_MaxSize: 40
     m_Alignment: 0
@@ -1177,9 +1176,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Althouth the tests conducted by the Vernian Patriarchy caused a lot of
-    damage. With your guidence and the Guidence of many other engineers the world
-    has recovered and became an even better place. '
+  m_Text: Althougth the tests conducted by the Vernian Government caused a lot of
+    damage, the situation was not unrecoverable. With your authority matched with
+    the wisdom of the nomadic Wanderer, Arret leads itself to a prosperous future.
 --- !u!222 &759321995
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1502,7 +1501,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 3b352bb8433134fc5a9d5207f82e9067, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 4
     m_MaxSize: 40
     m_Alignment: 0
@@ -1511,9 +1510,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Narrator: As you round up the conspiritors, you start to learn the true
-    bredth of their crimes. You may have just saved all of Arret today, surly the
-    world will think you a hero.'
+  m_Text: 'Narrator: As you round up the conspirators, you start to learn the true
+    breadth of their crimes. Vernia, run by these corrupted officials, were secretly
+    conducting experiments to extract materials from the rest of Arret. By siding
+    with the Empire and ending the war, you have saved all of Arret.'
 --- !u!222 &959534323
 CanvasRenderer:
   m_ObjectHideFlags: 0

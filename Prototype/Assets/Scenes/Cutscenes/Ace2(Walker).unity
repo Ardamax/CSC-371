@@ -1197,7 +1197,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 3b352bb8433134fc5a9d5207f82e9067, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 4
     m_MaxSize: 40
     m_Alignment: 0
@@ -1206,10 +1206,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Ace: This used to be such a nice forest. Are you happy with what you have
-    done Vernian
+  m_Text: 'Ace: This used to be such a nice forest, and look at what you Vernian scum
+    have done to it. Are you satisfied with your country''s actions?
 
-    You: I''ve only done what is just! where are the other aces. Where is the HunterAce!
+    You: To hell with your words! You think killing my friend whom I treat as family
+    just?! Give me the location of the Hunter, so that I may avenge Percival!
 
 '
 --- !u!222 &756032452
@@ -1294,7 +1295,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 3b352bb8433134fc5a9d5207f82e9067, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 4
     m_MaxSize: 40
     m_Alignment: 0
@@ -1303,15 +1304,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'He''s in what you would call the Badlands, I do not pity you Vernian. Your
-    quest will lead you down an ugly road
-
-    You: You don''t need to
-
-    Narrator: Off you fly to the badlands of the East. Farther from home than you
-    ever have been
-
-'
+  m_Text: "Ace: I'll only tell you because I know you don't stand a chance. You'll
+    find him in the harsh East, in the Badlands. I hope there you'll meet your friend
+    in hell.\nNarrator: You leave the defeated Ace in the dirt. He won't be getting
+    up anyways. The coordinates on the ship are now set to the Eastern Badlands. Never
+    before have you ventured so far from home. \n"
 --- !u!222 &759321995
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1622,7 +1619,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 3b352bb8433134fc5a9d5207f82e9067, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 4
     m_MaxSize: 40
     m_Alignment: 0
@@ -1631,14 +1628,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'You: I have you now, you and your lackys can not stand up to the power
-    of Vernia
+  m_Text: 'You: I have you now! You and your lackeys are peons before the might of
+    Vernia!
 
-    Ace: We will never give up
+    Ace: Silence! We shall never succumb to Vernian filth such as you!
 
-    You: Give up, no you will die
-
-'
+    You: Is that all you have to say for your last words?'
 --- !u!222 &942359908
 CanvasRenderer:
   m_ObjectHideFlags: 0

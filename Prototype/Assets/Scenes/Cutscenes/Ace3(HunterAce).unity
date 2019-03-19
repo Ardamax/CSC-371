@@ -1071,7 +1071,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 3b352bb8433134fc5a9d5207f82e9067, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 4
     m_MaxSize: 40
     m_Alignment: 0
@@ -1080,14 +1080,15 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Ace: What am I to hunt with what you vernians have done, This used to be
-    the best Jungle this side of Arret.
+  m_Text: 'Hunter: It is a shame this place is even referred to the Badlands. Twenty
+    years ago, there no nowhere brimming with more life. We of Haisian people were
+    proud to dwell in what used to be the jungle of Edea. You Vernians have no shame,
+    ruining our homeland and claiming justice!
 
-    You: You had no problem hunting percy! Where is your fellow aces
+    You: Sorry, I was too busy thinking of how to gut you to listen. Before you die
+    though, tell me where the Wanderer is.
 
-    Ace: I only know where the wanderer is, but why should I tell you
-
-    You: Oh i''ll give you a reason.
+    Hunter: Over my dead body!
 
 '
 --- !u!222 &756032452
@@ -1172,7 +1173,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 3b352bb8433134fc5a9d5207f82e9067, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 4
     m_MaxSize: 40
     m_Alignment: 0
@@ -1181,8 +1182,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: So After some time you learn that the wander is in the Land of Rivers and
-    Lakes. off you travel, your quest for vengeance at its midway point.
+  m_Text: So after finding and torturing a few Haisian citizens, you discover that
+    the Wanderer is in Undia, the land of rivers and lakes. Off you travel - your
+    quest for vengeance now at its midway point.
 --- !u!222 &759321995
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1505,7 +1507,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 3b352bb8433134fc5a9d5207f82e9067, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 4
     m_MaxSize: 40
     m_Alignment: 0
@@ -1514,11 +1516,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'You: Ha some Hunter you turned out to be.
+  m_Text: 'You: And so the Hunter becomes the hunted.
 
-    Ace: Just like a vernian no morals
+    Hunter: I don''t want to listen to the garbage you disgusting Vernians spew.
 
-    You : That''s Rich coming from you'
+    You : So says the peace-ending invaders...'
 --- !u!222 &959534323
 CanvasRenderer:
   m_ObjectHideFlags: 0
