@@ -3,6 +3,8 @@ using System.Collections;
 using UnityEngine.SceneManagement;
 using UnityEngine.Scripting;
 //justin 
+//chris (sound)
+//Spencer (Haungs mode)
 [Preserve]
 
 public class PlayerHealth : MonoBehaviour
