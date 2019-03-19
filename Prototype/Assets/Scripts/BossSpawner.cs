@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-//Justin Evnas
+//Justin Evans
 
 public class BossSpawner : MonoBehaviour
 {
