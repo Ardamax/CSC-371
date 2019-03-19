@@ -844,6 +844,11 @@ PrefabInstance:
       propertyPath: maxDurability
       value: 200
       objectReference: {fileID: 0}
+    - target: {fileID: 5478296055003224220, guid: 6f5655377393c8e47bc9dceda3bd54cf,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6609265831506629056, guid: 6f5655377393c8e47bc9dceda3bd54cf, type: 3}
     - {fileID: 2708932490728907072, guid: 6f5655377393c8e47bc9dceda3bd54cf, type: 3}

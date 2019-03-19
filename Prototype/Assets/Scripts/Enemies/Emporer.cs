@@ -79,7 +79,9 @@ public class Emporer : MonoBehaviour, IEnemy
             foreach (Transform child in body.transform)
             {
                 if (child.CompareTag("Weapon"))
+                {
                     child.SendMessage("fire");
+                }
             }
             fireCooldown = fireDelay;
         }

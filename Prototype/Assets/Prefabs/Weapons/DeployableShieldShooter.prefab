@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 3634211440036114869}
   m_Layer: 0
   m_Name: DeployableShieldShooter
-  m_TagString: Untagged
+  m_TagString: Weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -115,6 +115,7 @@ MonoBehaviour:
   cooldownDuration: 10
   deployableShieldPrefab: {fileID: 8293168069757058322, guid: fb850fcd3f5f41c4b89eef09061bf48f,
     type: 3}
+  maxDurability: 0
 --- !u!114 &3972014140047194339
 MonoBehaviour:
   m_ObjectHideFlags: 0
