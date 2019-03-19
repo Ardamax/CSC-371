@@ -61,8 +61,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1.56, y: 1.06}
+  m_Offset: {x: -0.8, y: 0.07}
+  m_Size: {x: 3.5, y: 3.25}
   m_Direction: 1
 --- !u!114 &3390626605933457187
 MonoBehaviour:
@@ -472,9 +472,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4835fc9aa874a9b4e8e1c6db4546f6f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xbounds: 13
-  ybounds: 7
-  speed: 10
+  xbounds: 12
+  ybounds: 6
+  speed: 7
   boundary:
     xMin: 10
     xMax: 10
@@ -517,9 +517,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   initialHealth: 50
+  health: 0
   repeatDamagePeriod: 2
   hurtForce: 10
   damageAmount: 10
+  impact: {fileID: 0}
 --- !u!1 &3390626607717596891
 GameObject:
   m_ObjectHideFlags: 0
@@ -536,7 +538,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3390626607717596890
 Transform:
   m_ObjectHideFlags: 0
@@ -660,8 +662,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1.56, y: 1.06}
+  m_Offset: {x: 0.8, y: 0.07}
+  m_Size: {x: 3.5, y: 3.25}
   m_Direction: 1
 --- !u!114 &3390626607865965136
 MonoBehaviour:
@@ -758,6 +760,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3390626607865965139}
     m_Modifications:
+    - target: {fileID: 1287915556241913966, guid: 155faf168f875df4d99cdceab24d7dc1,
+        type: 3}
+      propertyPath: m_Name
+      value: Cannon
+      objectReference: {fileID: 0}
+    - target: {fileID: 7131836336875747161, guid: 155faf168f875df4d99cdceab24d7dc1,
+        type: 3}
+      propertyPath: isSnapped
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1287915556241913967, guid: 155faf168f875df4d99cdceab24d7dc1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -823,18 +835,7 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1287915556241913967, guid: 155faf168f875df4d99cdceab24d7dc1,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1287915556241913966, guid: 155faf168f875df4d99cdceab24d7dc1,
-        type: 3}
-      propertyPath: m_Name
-      value: Cannon
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 7131836336875747161, guid: 155faf168f875df4d99cdceab24d7dc1, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 155faf168f875df4d99cdceab24d7dc1, type: 3}
 --- !u!4 &4526808878032034592 stripped
 Transform:
@@ -855,6 +856,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3390626605933457197}
     m_Modifications:
+    - target: {fileID: 1287915556241913966, guid: 155faf168f875df4d99cdceab24d7dc1,
+        type: 3}
+      propertyPath: m_Name
+      value: Cannon
+      objectReference: {fileID: 0}
+    - target: {fileID: 7131836336875747161, guid: 155faf168f875df4d99cdceab24d7dc1,
+        type: 3}
+      propertyPath: isSnapped
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1287915556241913967, guid: 155faf168f875df4d99cdceab24d7dc1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -920,18 +931,7 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1287915556241913967, guid: 155faf168f875df4d99cdceab24d7dc1,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1287915556241913966, guid: 155faf168f875df4d99cdceab24d7dc1,
-        type: 3}
-      propertyPath: m_Name
-      value: Cannon
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 7131836336875747161, guid: 155faf168f875df4d99cdceab24d7dc1, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 155faf168f875df4d99cdceab24d7dc1, type: 3}
 --- !u!1 &4526808878342135229 stripped
 GameObject:
