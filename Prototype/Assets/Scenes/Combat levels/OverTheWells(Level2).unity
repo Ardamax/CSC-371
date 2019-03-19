@@ -8902,6 +8902,11 @@ PrefabInstance:
       propertyPath: health
       value: 300
       objectReference: {fileID: 0}
+    - target: {fileID: 4621308058499883420, guid: af146a53a5e7d81468baec6f44c567fa,
+        type: 3}
+      propertyPath: boatSpawnDelay
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af146a53a5e7d81468baec6f44c567fa, type: 3}
 --- !u!1001 &875384478

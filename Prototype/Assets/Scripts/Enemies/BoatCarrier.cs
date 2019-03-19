@@ -17,7 +17,7 @@ public class BoatCarrier : MonoBehaviour, IEnemy
     private float timeSinceBoatSpawn = 0f;
     private float damageTime = 0.3f;
 
-    public float boatSpawnDelay = 5f;
+    public float boatSpawnDelay = 2f;
     public float firingInterval = 1f;
     private IWeapon weapon;
 
@@ -85,10 +85,6 @@ public class BoatCarrier : MonoBehaviour, IEnemy
 
         if (health <= 0)
         {
-            if (sceneName != "Level1")
-            {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-            }
             die();
         }
     }
@@ -104,9 +100,10 @@ public class BoatCarrier : MonoBehaviour, IEnemy
     void Update()
     {
         if (isAttacking) {
-            timeSinceHit += Time.deltaTime;
-            timeSinceLastAttack += Time.deltaTime;
-            timeSinceBoatSpawn += Time.deltaTime;
+            float deltaTime = Time.deltaTime;
+            timeSinceHit += deltaTime;
+            timeSinceLastAttack += deltaTime;
+            timeSinceBoatSpawn += deltaTime;
 
             if (r.color != Color.white && timeSinceHit >= damageTime)
             {
