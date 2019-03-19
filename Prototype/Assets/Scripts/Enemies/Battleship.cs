@@ -65,9 +65,9 @@ public class Battleship : MonoBehaviour, IEnemy
     public void die()
     {
         //Spencer
-        drop.GetComponent<WingCode>().isSnapped = false;
-        Instantiate(drop, new Vector2(gameObject.transform.position.x,
+        GameObject newDrop = Instantiate(drop, new Vector2(gameObject.transform.position.x,
             gameObject.transform.position.y), Quaternion.identity);
+        newDrop.GetComponent<WingCode>().isSnapped = false;
         Destroy(gameObject);
     }
     //Larry Xu

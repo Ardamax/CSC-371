@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using UnityEngine.Scripting;
+
+[Preserve]
 
 public class PlayerHealth : MonoBehaviour
 {	
@@ -20,19 +23,14 @@ public class PlayerHealth : MonoBehaviour
     public AudioClip impact;
     static AudioSource audioSrc;
 
-
-    void Awake ()
-	{
-        audioSrc = GetComponent<AudioSource>();
-        healthBar = GameObject.Find("HealthBar").GetComponent<SpriteRenderer>();
-
-		// Getting the intial scale of the healthbar (whilst the player has full health).
-		healthScale = healthBar.transform.localScale;
-	}
-
 	void Start() {
+		healthBar = GameObject.Find("HealthBar").GetComponent<SpriteRenderer>();
+		healthScale = healthBar.transform.localScale;
+
 		resetHealth();
         sceneName = SceneManager.GetActiveScene().name;
+
+		audioSrc = GetComponent<AudioSource>();
     }
 
 	void Update() {
