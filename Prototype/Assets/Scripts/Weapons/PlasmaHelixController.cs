@@ -50,7 +50,6 @@ public class PlasmaHelixController : MonoBehaviour, IWeapon
     {
         return "PlasmaHelix";
     }
-    //Larry Xu: the weapon can rotate to aim at player
     public void aim(int aimSpeed)
     {
         vectorToTarget = player.transform.position - transform.position;
@@ -60,6 +59,7 @@ public class PlasmaHelixController : MonoBehaviour, IWeapon
         transform.rotation = Quaternion.Slerp(transform.rotation, q, Time.deltaTime * aimSpeed);
     }
     // Update is called once per frame
+    //Justin fixed bug where projectile only went down and set targets incorrectly.
     void Update()
     {
         timeSinceLastSpawned += Time.deltaTime;
