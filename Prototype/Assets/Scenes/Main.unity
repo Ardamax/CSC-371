@@ -285,6 +285,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2183752480901679799, guid: add6228be9ae9634180a516aa05ee83f,
+        type: 3}
+      propertyPath: isAttacking
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6550016671958549312, guid: add6228be9ae9634180a516aa05ee83f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: add6228be9ae9634180a516aa05ee83f, type: 3}
 --- !u!1 &467811050

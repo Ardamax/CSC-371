@@ -36,7 +36,6 @@ public class Hunter : MonoBehaviour, IEnemy
         r = gameObject.transform.Find("Body").GetComponent<SpriteRenderer>();
         leftWeapon = gameObject.transform.Find("Hunter Left Wing").gameObject.GetComponentInChildren<IWeapon>();
         rightWeapon = gameObject.transform.Find("Hunter Right Wing").gameObject.GetComponentInChildren<IWeapon>();
-        drop = gameObject.transform.Find("Hunter Left Wing").GetChild(0).gameObject;
     }
 
     public void startAttacking()
