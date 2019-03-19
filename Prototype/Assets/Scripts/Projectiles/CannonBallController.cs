@@ -38,7 +38,8 @@ public class CannonBallController : MonoBehaviour, IProjectile
     public void setTarget(string t)
     {
         target = t;
-        damage = 5;
+        if (target == "Player")
+            damage = 5;
     }
     void OnTriggerEnter2D(Collider2D other)
     {
