@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // Spencer
+//justin (bugs only)
 public class GroundMovement : MonoBehaviour
 {
     public float speed;
