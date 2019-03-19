@@ -1119,10 +1119,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: You are a Mighty Engineer. Having grown up with your best friend Percival,
-    you two have always had each other's backs. After freshly graduating from the
-    Vernian Air Force academy you and your best friend anticipate taking off to the
-    skies - together.
+  m_Text: You are an engineer in the vernian air force. You joined the academy with
+    your best friend Percival back when you both were children. You had grown up with
+    him and considered him your brother. Now after freshly graduating you both can
+    hardly wait to take to the skys.
 --- !u!222 &756032452
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1214,9 +1214,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'You and Percy are on an armed training flight when a code red message was
-    relayed: "THE EMPIRE HAS INVADED. All hands to Battlestations". You and Percy
-    have been suddenly enlisted to fight the Empire.'
+  m_Text: 'You and Percival are on an armed training flight when a code red message
+    was relayed: "THE EMPIRE HAS INVADED. All hands to Battlestations". Its time for
+    you and Percy to proove your mettle.'
 --- !u!222 &759321995
 CanvasRenderer:
   m_ObjectHideFlags: 0

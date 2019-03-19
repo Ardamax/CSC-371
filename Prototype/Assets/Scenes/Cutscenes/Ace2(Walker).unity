@@ -1209,8 +1209,8 @@ MonoBehaviour:
   m_Text: 'Ace: This used to be such a nice forest, and look at what you Vernian scum
     have done to it. Are you satisfied with your country''s actions?
 
-    You: To hell with your words! You think killing my friend whom I treat as family
-    just?! Give me the location of the Hunter, so that I may avenge Percival!
+    You: To hell with your words! You think killing my friend no, my brother was just?!
+    Give me the location of the Hunter, so that I may avenge Percival!
 
 '
 --- !u!222 &756032452
@@ -1305,10 +1305,10 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Ace: I'll only tell you because I know you don't stand a chance. You'll
-    find him in the harsh East, in the Badlands. I hope there you'll meet your friend
-    in hell.\nNarrator: You leave the defeated Ace in the dirt. He won't be getting
-    up anyways. The coordinates on the ship are now set to the Eastern Badlands. Never
-    before have you ventured so far from home. \n"
+    find him in the harsh East, the Badlands. Then you can see your friend...In Hell!\nNarrator:
+    You leave the defeated Ace in the dirt. He won't be getting up anyways. The coordinates
+    on the ship are now set to the Eastern Badlands. Never before have you ventured
+    so far from home. \n"
 --- !u!222 &759321995
 CanvasRenderer:
   m_ObjectHideFlags: 0

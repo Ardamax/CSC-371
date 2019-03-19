@@ -1088,7 +1088,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Narrator: And so you build a new airship from remains of your plane that
+  m_Text: 'Narrator: And so you build a new airship from remains of the plane that
     you and Percy piloted. You take a break only to bury Percy and say a few words
     of respect. With your exemplary engineering prowess, the airship took to the skies,
     and so begins your new journey over the Wells.
@@ -1414,8 +1414,8 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 'Narrator: You don''t know how long you''ve been out. Slowly, you rise from
-    the rubble covering your seat. Luckily, you''ve survived. However, you remember
-    Percival...
+    the rubble covering your seat. Luckily, you''ve survived. You look around and
+    dont see Percival...
 
 
     You: Percy, you feeling ok...Percy! Percy! Oh my Gosh NO! PERCYYYYY!

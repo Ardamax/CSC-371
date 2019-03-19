@@ -1080,17 +1080,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Hunter: It is a shame this place is even referred to the Badlands. Twenty
+  m_Text: "Hunter: It is a shame, you see these badlands it was not always so. Twenty
     years ago, there no nowhere brimming with more life. We of Haisian people were
     proud to dwell in what used to be the jungle of Edea. You Vernians have no shame,
-    ruining our homeland and claiming justice!
-
-    You: Sorry, I was too busy thinking of how to gut you to listen. Before you die
-    though, tell me where the Wanderer is.
-
-    Hunter: Over my dead body!
-
-'
+    ruining our homeland and claiming justice!\nYou: And so you wish to blame all
+    your troubles on us, who live thousands of miles away. tell me where the Wanderer
+    is.\nHunter: The Wanderer, you have no need of him Vernian. \n"
 --- !u!222 &756032452
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1182,9 +1177,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: So after finding and torturing a few Haisian citizens, you discover that
-    the Wanderer is in Undia, the land of rivers and lakes. Off you travel - your
-    quest for vengeance now at its midway point.
+  m_Text: After a few hours of "dialogue", you discover that the Wanderer is in Undia,
+    the land of rivers and lakes. Off you travel - your quest for vengeance now at
+    its midway point.
 --- !u!222 &759321995
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1518,7 +1513,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'You: And so the Hunter becomes the hunted.
 
-    Hunter: I don''t want to listen to the garbage you disgusting Vernians spew.
+    Hunter: I don''t want to listen to your gloating.
 
     You : So says the peace-ending invaders...'
 --- !u!222 &959534323
