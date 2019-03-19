@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // Spencer
+// Justin
 public class BoatController : MonoBehaviour
 {
     public bool isAttacking = false;
